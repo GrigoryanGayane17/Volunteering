@@ -1,0 +1,128 @@
+.team-section1 {
+    padding: 100px 0 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.team-section1-img {
+    width: 809px;
+    height: 509px;
+    object-fit: cover;
+    z-index: 200;
+}
+
+.team-section1-absolute-div1 {
+    position: absolute;
+    width: 980px;
+    height: 300px;
+    background-color: #eacabd;
+    bottom: 0
+}
+
+.team-section1-absolute-div2 {
+    position: absolute;
+    width: 600px;
+    background-color: #ffffff;
+    bottom: -20%;
+    left: 0;
+    z-index: 300;
+    padding: 50px;
+}
+
+.team-section1-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    background-color: #1f2544;
+    font-size: 20px;
+    transition: .3s;
+    font-weight: 500;
+
+}
+
+.team-section1-btn:hover {
+    color: #1f2544;
+    background-color: #c4cae8;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.team-section1-absolute-div1-h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1f2544
+}
+
+.team-section2-div {
+    background-color: #1f2645;
+    padding: 30px 20px;
+    width: 300px;
+    height: 380px;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .team-section1-img {
+        width: 409px;
+        height: 209px;
+    }
+
+    .team-section1-absolute-div1 {
+
+        display: none
+
+    }
+
+    .team-section1-absolute-div2 {
+        width: 100%;
+        bottom: 0;
+        box-shadow: 0 0 10px 5px gray;
+    }
+
+    .team-section1-absolute-div1-h1 {
+        font-size: 22px;
+        font-weight: 800;
+        color: #1f2544
+    }
+
+    .team-section1 {
+        height: 110vh;
+    }
+    .team-section2-div{
+        padding: 30px 20px;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .team-section1-img {
+        width: 609px;
+        height: 409px;
+    }
+
+    .team-section1-absolute-div1 {
+        width: 670px;
+        height: 200px;
+    }
+
+    .team-section1-absolute-div2 {
+        width: 400px;
+        bottom: -30%;
+    }
+
+    .team-section1-absolute-div1-h1 {
+        font-size: 35px;
+        font-weight: 800;
+        color: #1f2544
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+}

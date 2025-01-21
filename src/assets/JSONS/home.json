@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "sectionName": "Therapy Center",
+    "mainText": "A Theraphy Center offers holistic healing through energy therapy, stress management, and emotional support. It creates a peaceful space for personal growth, helping individuals restore balance and well-being.",
+    "link": "learn more"
+  },
+  {
+    "id": 2,
+    "sectionName": "Group Therapy & Workshops",
+    "square_divs": {
+      "text_1": "Individual Therapy",
+      "text_2": "Child--Therapy",
+      "text_3": "Group Therapy",
+      "text_4": "Family Therapy"
+    }
+  },
+  {
+    "id": 3,
+    "sectionName": "Workshops",
+    "under_text": "Setting brand and digital strategies that mobilises teams from authentic insights.",
+    "correct_texts_col1": {
+      "text_1": "I Mostly focused on the development of everyday skills.",
+      "text_2": "Workshops tend to be intermittent and take place in series, not requiring continuous attendance..",
+      "text_3": "There is no necessary screening (drop-in registrations are welcome)."
+    },
+    "text_col_2": "Both groups and workshops are powerful treatment modalities. Their power lies in the support and feedback given by other participants as well as by the facilitators."
+  },
+  {
+    "id": 4,
+    "sectionName": "Couples and Family Therapy",
+    "mainText": "Couples and family Teraphi helps improve communication, resolve conflicts, and strengthen relationships for greater harmony and emotional well-being.",
+    "button": "learn more"
+  },
+  {
+    "id": 5,
+    "sectionDivs": {
+      "div_1": {
+        "div_name": "Need help right now?",
+        "main_text": "Call 123-456-4340 and press option 2 to speak with a counselor 24/7/365",
+        "link": "Crisis Services"
+      },
+      "div_2": {
+        "div_name": "Just need someone to listen?",
+        "main_text": "CTry a Peer Counselor! They're here to listen and support.",
+        "link": "Peer Counselors"
+      },
+      "div_3": {
+        "div_1": {
+          "div_name": "Looking for a private space?",
+          "main_text": "We have tips and instructions on how to book private spaces on campus for virtual appointments.",
+          "link": "Tips for Zooming"
+        },
+        "div_2": {
+          "div_name": "Group Therapy is back!",
+          "main_text": "The Counseling Center has a wide variety of services for students, including powerful group therapy",
+          "link": "Try our Groups!"
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "sectionName": "Psychology and Counselling Services",
+    "mainText": "Psychology and Counselling Services offer professional support for mental health and emotional challenges. Through personalized sessions, trained therapists help individuals manage stress, anxiety, depression, and life transitions, promoting overall well-being and personal growth.",
+    "button": "learn more"
+  },
+  {
+    "id": 7,
+    "sectionName": "What is Group Therapy?",
+    "mainText": "Group therapy is a supportive space where individuals share experiences and learn from each other, guided by a trained therapist to promote healing and growth.",
+    "button": "learn more"
+  },
+  {
+    "id": 8,
+    "sectionName": "Understanding group therapy",
+    "mainText": "Understanding group therapy involves recognizing it as a powerful and supportive form of therapy where individuals facing similar challenges come together to share their experiences, gain insights, and support one another. Led by a trained therapist, group therapy creates a safe and structured environment for personal growth.",
+    "button": "learn more"
+  }
+]

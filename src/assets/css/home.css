@@ -1,0 +1,250 @@
+.home-section1-btn {
+    padding: 10px 35px 10px 34px;
+    background-color: #1f2645;
+    color: white;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .3s;
+    z-index: 400
+}
+
+.home-section1-btn:hover {
+    background-color: #c4cae8;
+    color: black;
+    transition: .3s;
+}
+
+.home-section1-img {
+    width: 575px;
+    height: 679px;
+    z-index: 200;
+    object-fit: cover;
+}
+
+.home-section1-absolute-div1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #1f2544;
+    top: 0;
+    right: 0;
+    z-index: 25;
+}
+
+.home-section1-absolute-div2 {
+    position: absolute;
+    width: 900px;
+    height: 200px;
+    background-color: #eacabd;
+    bottom: 0;
+    right: 0;
+    z-index: 25;
+}
+
+.home-section2-div {
+    background-color: #eacabd;
+    margin: 10px;
+    padding: 30px;
+    width: 250px;
+
+}
+
+.home-section2 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 37%, rgba(31, 37, 68, 1) 37%);
+}
+
+.home-section3 {
+    background: rgb(31, 37, 68);
+    background: linear-gradient(180deg, rgba(31, 37, 68, 1) 53%, rgba(255, 255, 255, 1) 53%);
+}
+
+.home-section3-absolute-div1 {
+    background-color: #eacabd;
+    width: 950px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    z-index: 25;
+}
+
+.home-section3-absolute-div2 {
+    background-color: #ffffff;
+    width: 570px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 300;
+    padding: 50px
+}
+
+.home-section3-img {
+    width: 809px;
+    height: 579px;
+    z-index: 200;
+}
+
+.home-section3-btn {
+    background-color: #1f2544;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.home-section3-btn:hover {
+    background-color: #c4cae8;
+    color: black;
+    transition: .3s;
+}
+
+.home-section4-div {
+    background-color: white;
+    width: 500px;
+    padding: 50px
+}
+
+.home-section5-link {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.home-section5-link:hover {
+    color: #eacabd;
+    transition: .3s;
+}
+
+.home-section6-img {
+    width: 452px;
+    height: 461px;
+    object-fit: cover;
+    z-index: 300;
+}
+
+.home-section6-absolute-div1 {
+    background-color: #1f2544;
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 20%;
+    left: 0;
+    z-index: 25;
+}
+
+.home-section6-absolute-div2 {
+    background-color: #eacabd;
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    top: 20%;
+    right: 0;
+    z-index: 25;
+}
+
+.home-section7-div {
+    width: 1000px;
+    z-index: 300;
+
+}
+
+.home-section7-div-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    z-index: 300;
+}
+
+
+@media (max-width: 768px) {
+    .home-section1-img {
+        width: 375px;
+        height: 479px;
+    }
+
+    .home-section2-div {
+        width: 100%;
+    }
+
+    .home-section3-img {
+        width: 376px;
+        height: 296px;
+        object-fit: cover;
+    }
+
+    .home-section3-absolute-div1 {
+        width: 440px;
+        height: 218px;
+    }
+
+    .home-section3-absolute-div2 {
+        width: 400px;
+        top: 50%;
+        padding: 20px;
+    }
+
+    .home-section3 {
+        height: 100vh;
+    }
+
+    .home-section6-img {
+        width: 352px;
+        height: 361px;
+    }
+
+
+    .home-section6-absolute-div1 {
+        background-color: #1f2544;
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        top: 30%;
+        left: 0;
+        z-index: 25;
+    }
+
+    .home-section6-absolute-div2 {
+        background-color: #eacabd;
+        position: absolute;
+        width: 300px;
+        height: 350px;
+        top: 30%;
+        right: 0;
+        z-index: 25;
+    }
+
+    .home-section7-div {
+        width: 400px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .home-section3-img {
+        width: 576px;
+        height: 496px;
+        object-fit: cover;
+    }
+
+    .home-section3-absolute-div1 {
+        width: 700px;
+        height: 318px;
+    }
+
+    .home-section3 {
+        height: 110vh;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+}
