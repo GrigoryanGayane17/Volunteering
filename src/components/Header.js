@@ -1,11 +1,18 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function Header(props) {
     const [menu, setMenu] = useState(false)
     const handleMenu = () => {
         setMenu(!menu)
     }
+
+    const {t, i18n} = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng); // Switch to the selected language
+    };
     return (
         <div className={'container-fluid'}>
             <div className={'row'}>
@@ -30,6 +37,11 @@ function Header(props) {
             {menu ?
                 <div>
                     <div className={'submenu'}>
+                        <div>
+                            <button style={{padding:'15px 20px 15px 20px'}} onClick={()=>changeLanguage('en')}>En</button>
+                            <button onClick={()=>changeLanguage('ru')}>Ru</button>
+                            <button onClick={()=>changeLanguage('am')}>Am</button>
+                        </div>
                         <svg onClick={handleMenu} xmlns="http://www.w3.org/2000/svg" height="48px"
                              viewBox="0 -960 960 960"
                              width="48px" fill="#FFFFFF">

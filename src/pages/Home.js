@@ -1,10 +1,17 @@
 import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import homeJson from '../assets/JSONS/home.json'
+import {useTranslation} from "react-i18next";
 
 function Home(props) {
-    return (<div>
+
+    const {t, i18n} = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng); // Switch to the selected language
+    };
+    return (
+        <div>
         <Header/>
 
         <div className={'container'}>
@@ -13,10 +20,10 @@ function Home(props) {
                     padding: '100px 50px', display: 'flex', justifyContent: 'center', alignItems: 'center',
                 }} className={'col-lg-5 col-md-12 col-sm-12'}>
                     <div>
-                        <h1 style={{fontSize: '80px', fontWeight: '800',color:'#1f2645'}}>{homeJson[0].sectionName}</h1>
+                        <h1 style={{fontSize: '60px', fontWeight: '800',color:'#1f2645'}}>{t('home.section1.sectionName')}</h1>
                         <p style={{fontSize: "20px", marginTop: '25px'}}>
-                            {homeJson[0].mainText} </p>
-                        <button className={'home-section1-btn'}>{homeJson[0].link}</button>
+                            {t('home.section1.mainText')}</p>
+                        <button className={'home-section1-btn'}>{t('home.section1.link')}</button>
                     </div>
 
                 </div>
@@ -39,7 +46,7 @@ function Home(props) {
         <div className={'container-fluid home-section2'}>
             <div className={'row'}>
                 <div style={{padding: '100px 30px'}} className={'col-12'}>
-                    <h1 style={{fontWeight: '800', fontSize: '60px', textAlign: 'center'}}>{homeJson[1].sectionName}</h1>
+                    <h1 style={{fontWeight: '800', fontSize: '60px', textAlign: 'center'}}>{t('home.section2.sectionName')}</h1>
                 </div>
             </div>
             <div className={'row'}>
@@ -56,7 +63,7 @@ function Home(props) {
                             <img className={'home-section2-div-img'} style={{width: '70px', height: '70px'}}
                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/ec0be216.png'}/>
                         </div>
-                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{homeJson[1].square_divs.text_1}</h2>
+                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{t('home.section2.square_divs.text_1')}</h2>
                     </div>
 
                     <div className={'home-section2-div'}>
@@ -64,14 +71,14 @@ function Home(props) {
                             <img className={'home-section2-div-img'} style={{width: '70px', height: '70px'}}
                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/245a2f13.png'}/>
                         </div>
-                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{homeJson[1].square_divs.text_2}</h2>
+                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{t('home.section2.square_divs.text_2')}</h2>
                     </div>
                     <div className={'home-section2-div'}>
                         <div style={{display: 'flex', justifyContent: 'center'}}>
                             <img className={'home-section2-div-img'} style={{width: '70px', height: '70px'}}
                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/96972e44.png'}/>
                         </div>
-                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{homeJson[1].square_divs.text_3}</h2>
+                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{t('home.section2.square_divs.text_3')}</h2>
                     </div>
 
                     <div className={'home-section2-div'}>
@@ -79,7 +86,7 @@ function Home(props) {
                             <img className={'home-section2-div-img'} style={{width: '70px', height: '70px'}}
                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/0ae08100.png'}/>
                         </div>
-                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{homeJson[1].square_divs.text_4}</h2>
+                        <h2 style={{textAlign: 'center', marginTop: '30px', color: '#1f2543'}}>{t('home.section2.square_divs.text_4')}</h2>
                     </div>
                 </div>
             </div>
@@ -91,12 +98,12 @@ function Home(props) {
                         fontSize: '50px',
                         fontWeight: '800',
                         marginBottom: '15px'
-                    }}>{homeJson[2].sectionName}</h1>
-                    <p style={{color: 'white', fontSize: '20px'}}>{homeJson[2].under_text}</p>
+                    }}>{t('home.section3.sectionName')}</h1>
+                    <p style={{color: 'white', fontSize: '20px'}}>{t('home.section3.under_text')}</p>
                     <div>
-                        <p style={{color: 'white', fontSize: '25px'}}>✔ {homeJson[2].correct_texts_col1.text_1}</p>
-                        <p style={{color: 'white', fontSize: '25px'}}>✔ {homeJson[2].correct_texts_col1.text_2}</p>
-                        <p style={{color: 'white', fontSize: '25px'}}>✔ {homeJson[2].correct_texts_col1.text_3}</p>
+                        <p style={{color: 'white', fontSize: '25px'}}>✔ {t('home.section3.correct_texts_col1.text_1')}</p>
+                        <p style={{color: 'white', fontSize: '25px'}}>✔ {t('home.section3.correct_texts_col1.text_2')}</p>
+                        <p style={{color: 'white', fontSize: '25px'}}>✔ {t('home.section3.correct_texts_col1.text_3')}</p>
                     </div>
                 </div>
                 <div style={{padding: '100px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
@@ -106,7 +113,7 @@ function Home(props) {
                         fontWeight: '500',
                         marginBottom: '15px',
                         lineHeight: '80px'
-                    }}>{homeJson[2].text_col_2}</h2>
+                    }}>{t('home.section3.text_col_2')}</h2>
                 </div>
             </div>
         </div>
@@ -124,10 +131,10 @@ function Home(props) {
                          src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/Untitled-1e.jpg'}/>
                     <div className={'home-section3-absolute-div1'}></div>
                     <div className={'home-section3-absolute-div2'}>
-                        <h1 style={{fontSize: '40px', fontWeight: '700'}}>{homeJson[3].sectionName}</h1>
+                        <h1 style={{fontSize: '40px', fontWeight: '700'}}>{t('home.section4.sectionName')}</h1>
                         <p style={{fontSize: '20px'}}>
-                            {homeJson[3].mainText}</p>
-                        <button className={'home-section3-btn'}>{homeJson[3].button}</button>
+                            {t('home.section4.mainText')}</p>
+                        <button className={'home-section3-btn'}>{t('home.section4.button')}</button>
                     </div>
                 </div>
             </div>
@@ -147,10 +154,9 @@ function Home(props) {
                     <img style={{width: '100%', objectFit: 'cover'}}
                          src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/business-executives-discussing-w.jpg'}/>
                     <div style={{position: 'absolute', bottom: '0', color: 'white', padding: '30px'}}>
-                        <h2 style={{fontWeight: '700'}}>Need help right now?</h2>
-                        <p style={{fontSize: '30px'}}>Call 123-456-4340 and press option 2 to speak with a counselor
-                            24/7/365</p>
-                        <a className={'home-section5-link'} href={'#'}>Crisis Services</a>
+                        <h2 style={{fontWeight: '700'}}>{t('home.section5.sectionDivs.div_1.div_name')}</h2>
+                        <p style={{fontSize: '30px'}}>{t('home.section5.sectionDivs.div_1.main_text')}</p>
+                        <a className={'home-section5-link'} href={'#'}>{t('home.section5.sectionDivs.div_1.link')}</a>
                     </div>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', height: '80vh', padding: ' 20px '}}
@@ -159,9 +165,9 @@ function Home(props) {
                         <img style={{width: '100%', height: '226px', objectFit: 'cover'}}
                              src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/people-chairs-communicatingqq.jpg'}/>
                         <div style={{backgroundColor: '#1f2645', padding: '30px'}}>
-                            <h2 style={{fontWeight: '500'}}>Just need someone to listen?</h2>
-                            <p style={{fontSize: '25px'}}>Try a Peer Counselor! They're here to listen and support.</p>
-                            <a className={'home-section5-link'} href={'#'}>Peer Counselors</a>
+                            <h2 style={{fontWeight: '500'}}>{t('home.section5.sectionDivs.div_2.div_name')}</h2>
+                            <p style={{fontSize: '25px'}}>{t('home.section5.sectionDivs.div_2.main_text')}</p>
+                            <a className={'home-section5-link'} href={'#'}>{t('home.section5.sectionDivs.div_2.link')}</a>
 
                         </div>
                     </div>
@@ -170,19 +176,14 @@ function Home(props) {
                      className={'col-lg-4 col-md-12 col-sm-12'}>
                     <div>
                         <div style={{backgroundColor: '#e3c4b7', padding: '30px'}}>
-                            <h2>Looking for a private space?</h2>
-                            <p>We have tips and instructions on how to book private spaces on campus for virtual
-                                appointments.</p>
-                            <a style={{color: 'black', fontSize: '20px', fontWeight: '700'}} href={'#'}>Peer
-                                Counselors</a>
+                            <h2>{t('home.section5.sectionDivs.div_3.div_1.div_name')}</h2>
+                            <p>{t('home.section5.sectionDivs.div_3.div_1.main_text')}</p>
+                            <a style={{color: 'black', fontSize: '20px', fontWeight: '700'}} href={'#'}>{t('home.section5.sectionDivs.div_3.div_1.link')}</a>
                         </div>
                         <div style={{padding: '40px'}}>
-                            <h2 style={{fontWeight: '700'}}>Group Therapy is back!</h2>
-                            <p style={{fontSize: '20px'}}>The Counseling Center has a wide variety of services for
-                                students, including powerful
-                                group therapy</p>
-                            <a style={{color: 'black', fontSize: '20px', fontWeight: '700'}} href={'#'}>Try Our
-                                Groups</a>
+                            <h2 style={{fontWeight: '700'}}>{t('home.section5.sectionDivs.div_3.div_2.div_name')}</h2>
+                            <p style={{fontSize: '20px'}}>{t('home.section5.sectionDivs.div_3.div_2.main_text')}</p>
+                            <a style={{color: 'black', fontSize: '20px', fontWeight: '700'}} href={'#'}>{t('home.section5.sectionDivs.div_3.div_2.link')}</a>
                         </div>
                     </div>
                 </div>
@@ -209,12 +210,9 @@ function Home(props) {
                     alignItems: 'center',
                 }} className={'col-lg-6 col-md-12 col-sm-12'}>
                     <div>
-                        <h1 style={{fontSize: '45px', fontWeight: '700'}}>Psychology and Counselling Services</h1>
-                        <p style={{fontSize: '20px', lineHeight: '40px'}}>Psychology and Counselling Services offer
-                            professional support for mental health and emotional challenges. Through personalized
-                            sessions, trained therapists help individuals manage stress, anxiety, depression, and life
-                            transitions, promoting overall well-being and personal growth.</p>
-                        <button className={'home-section3-btn'}>learn more</button>
+                        <h1 style={{fontSize: '45px', fontWeight: '700'}}>{t('home.section6.sectionName')}</h1>
+                        <p style={{fontSize: '20px', lineHeight: '40px'}}>{t('home.section6.mainText')}</p>
+                        <button className={'home-section3-btn'}>{t('home.section6.button')}</button>
                     </div>
                 </div>
             </div>
@@ -230,13 +228,11 @@ function Home(props) {
                     backgroundPosition: 'center'
                 }} className={'col-12'}>
                     <div className={'home-section4-div'}>
-                        <h1 style={{textAlign: 'center', fontSize: '40px', fontWeight: '500'}}>What is Group
-                            Therapy?</h1>
+                        <h1 style={{textAlign: 'center', fontSize: '40px', fontWeight: '500'}}>{t('home.section7.sectionName')}</h1>
                         <p style={{fontSize: '20px', textAlign: 'center', lineHeight: '40px'}}>
-                            Group therapy is a supportive space where individuals share experiences and learn from each
-                            other, guided by a trained therapist to promote healing and growth.</p>
+                            {t('home.section7.mainText')}</p>
                         <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <button className={'home-section3-btn'}>learn more</button>
+                            <button className={'home-section3-btn'}>{t('home.section7.button')}</button>
                         </div>
                     </div>
                 </div>
@@ -251,16 +247,11 @@ function Home(props) {
                     <div className={'home-section7-div'}>
                         <div className={'home-section7-div-div'}>
                             <div style={{padding: '50px', width: '400px'}}>
-                                <h1 style={{fontSize: '40px', fontWeight: '700'}}>Understanding group therapy</h1>
+                                <h1 style={{fontSize: '40px', fontWeight: '700'}}>{t('home.section8.sectionName')}</h1>
                             </div>
                             <div style={{padding: '50px', width: '500px'}}>
-
-                                <p style={{fontSize: '20px', lineHeight: '40px'}}>Understanding group therapy involves
-                                    recognizing it as a powerful and supportive form of therapy where individuals facing
-                                    similar challenges come together to share their experiences, gain insights, and
-                                    support one another. Led by a trained therapist, group therapy creates a safe and
-                                    structured environment for personal growth.</p>
-                                <button className={'home-section3-btn'}>learn more</button>
+                                <p style={{fontSize: '20px', lineHeight: '40px'}}>{t('home.section8.mainText')}</p>
+                                <button className={'home-section3-btn'}>{t('home.section8.button')}</button>
                             </div>
                         </div>
 

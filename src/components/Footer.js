@@ -1,6 +1,13 @@
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
 function Footer(props) {
+
+    const {t, i18n} = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng); // Switch to the selected language
+    };
     return (
         <div className={'container'}>
             <div className={'row'}>
@@ -10,35 +17,35 @@ function Footer(props) {
                         fontWeight: '800',
                         marginBottom: '20px',
                         textAlign: 'center'
-                    }}>Contact Us</h1>
+                    }}>{t('footer.sectionName')}</h1>
                     <div style={{fontSize: '20px'}}>
                         <div className={'section8-inputs-div1'}>
                             <div style={{width: '100%', margin: '20px'}}>
-                                <p style={{marginBottom: '0'}}>Email </p>
-                                <input className={'section8-input1'} placeholder={'Enter your Email'}
+                                <p style={{marginBottom: '0'}}>{t('footer.form.email')}</p>
+                                <input className={'section8-input1'} placeholder={t('footer.form.emailPlaceholder')}
                                        type={'text'}/>
                             </div>
                             <div style={{width: '100%', margin: '20px'}}>
-                                <p style={{marginBottom: '0'}}>Name </p>
-                                <input className={'section8-input1'} placeholder={'Enter your name'} type={'text'}/>
+                                <p style={{marginBottom: '0'}}>{t('footer.form.name')}</p>
+                                <input className={'section8-input1'} placeholder={t('footer.form.namePlaceholder')} type={'text'}/>
                             </div>
                         </div>
                         <div style={{margin: '20px'}}>
-                            <p style={{marginBottom: '0'}}>Phone </p>
+                            <p style={{marginBottom: '0'}}>{t('footer.form.phone')} </p>
                             <input className={'section8-input2'}
-                                   placeholder={'Enter your phone (e.g. +14155552675)'} type={'text'}/>
+                                   placeholder={t('footer.form.phonePlaceholder')} type={'text'}/>
                         </div>
 
                         <div style={{margin: '20px'}}>
-                            <p style={{marginBottom: '0'}}>Message </p>
+                            <p style={{marginBottom: '0'}}>{t('footer.form.message')}</p>
                             <textarea style={{height: '135px'}} className={'section8-input2'}></textarea>
                         </div>
                         <div>
                             <input type={'checkbox'}/>
                             <span
-                                style={{marginLeft: '20px', fontSize: '20px'}}>I accept the Terms of Service</span>
+                                style={{marginLeft: '20px', fontSize: '20px'}}>{t('footer.form.checkbox')}</span>
                         </div>
-                        <button className={'section8-btn'}>SUBMIT</button>
+                        <button className={'section8-btn'}>{t('footer.form.button')}</button>
                     </div>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center',padding:'100px 30px'}}

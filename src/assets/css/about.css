@@ -49,6 +49,7 @@ body {
     width: 100%;
     animation: submenu .3s alternate;
     z-index: 400;
+    align-items: center
 }
 
 @keyframes submenu {

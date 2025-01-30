@@ -1,12 +1,21 @@
 import React from 'react';
 import Header from "../components/Header";
 import '../assets/css/ourTeam.css'
-import usersJson from '../assets/JSONS/users.json'
+import usersJson from '../assets/JSONS/English/users.Eng.json'
 import Footer from "../components/Footer";
+import {useTranslation} from "react-i18next";
+
 
 function OurTeam(props) {
+
+    const {t, i18n} = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng); // Switch to the selected language
+    };
     return (<div>
         <Header/>
+
         <div className={'container'}>
             <div className={'row'}>
                 <div className={'col-12 team-section1'}>
@@ -14,11 +23,9 @@ function OurTeam(props) {
                          src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/full-shot-people-sitting-chairs8967.jpg'}/>
                     <div className={'team-section1-absolute-div1'}></div>
                     <div className={'team-section1-absolute-div2'}>
-                        <h1 className={'team-section1-absolute-div1-h1'}>Our Professional Team of Therapists</h1>
-                        <p style={{fontSize: '20px', lineHeight: '40px'}}>Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-                        <button className={'team-section1-btn'}>learn more</button>
+                        <h1 className={'team-section1-absolute-div1-h1'}>{t('team.section1.sectionName')}</h1>
+                        <p style={{fontSize: '20px', lineHeight: '40px'}}>{t('team.section1.mainText')}</p>
+                        <button className={'team-section1-btn'}>{t('team.section1.button')}</button>
                     </div>
                 </div>
             </div>
@@ -27,7 +34,7 @@ function OurTeam(props) {
         <div className={'container'}>
             <div style={{padding: '100px 0 0 0 '}} className={'row'}>
                 <div style={{padding: '100px 0 0 0'}} className={'col-12'}>
-                    <h1 style={{fontSize: '50px', fontWeight: '800', textAlign: 'center'}}>WHO WE ARE</h1>
+                    <h1 style={{fontSize: '50px', fontWeight: '800', textAlign: 'center'}}>{t('team.section2.sectionName')}</h1>
                 </div>
             </div>
         </div>
@@ -38,35 +45,29 @@ function OurTeam(props) {
                     <div style={{
                         backgroundColor: '#1f2645'
                     }} className={'team-section2-div'}>
-                        <h3 style={{fontWeight: '700', color: 'white'}}>How we are unique</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'white'}}>We stand at the heart of a
-                            global, purpose-driven, multi-sport ecosystem.</p>
+                        <h3 style={{fontWeight: '700', color: 'white'}}>{t('team.section2.divs.div1.divName')}</h3>
+                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'white'}}>{t('team.section2.divs.div1.divText')}</p>
                     </div>
 
                     <div style={{
                         backgroundColor: '#eacabd'
                     }} className={'team-section2-div'}>
-                        <h3 style={{fontWeight: '700', color: 'black'}}>What we do</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>We stand at the heart of a
-                            global, purpose-driven, multi-sport ecosystem.</p>
+                        <h3 style={{fontWeight: '700', color: 'black'}}>{t('team.section2.divs.div2.divName')}</h3>
+                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>{t('team.section2.divs.div2.divText')}</p>
                     </div>
 
                     <div style={{
                         backgroundColor: '#1f2645'
                     }} className={'team-section2-div'}>
-                        <h3 style={{fontWeight: '700', color: 'white'}}>What we value</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'white'}}>Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum.</p>
+                        <h3 style={{fontWeight: '700', color: 'white'}}>{t('team.section2.divs.div3.divName')}</h3>
+                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'white'}}>{t('team.section2.divs.div3.divText')}</p>
                     </div>
 
                     <div style={{
                         backgroundColor: '#eacabd'
                     }} className={'team-section2-div'}>
-                        <h3 style={{fontWeight: '700', color: 'black'}}>People & Careers</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>Excepteur sint occaecat
-                            cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h3 style={{fontWeight: '700', color: 'black'}}>{t('team.section2.divs.div4.divName')}</h3>
+                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>{t('team.section2.divs.div4.divText')}</p>
                     </div>
                 </div>
             </div>
@@ -75,8 +76,7 @@ function OurTeam(props) {
         <div className={'container'}>
             <div className={'row'}>
                 <div style={{padding:'0 20px 80px 20px'}} className={'col-12'}>
-                    <h1 style={{fontSize: '50px', fontWeight: '800', textAlign: 'center'}}>Our Professional Team of
-                        Therapists</h1>
+                    <h1 style={{fontSize: '50px', fontWeight: '800', textAlign: 'center'}}>{t('team.section3.sectionName')}</h1>
                 </div>
             </div>
         </div>
