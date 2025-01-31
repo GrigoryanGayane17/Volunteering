@@ -1,3 +1,4 @@
+
 .home-section1-btn {
     padding: 10px 35px 10px 34px;
     background-color: #1f2645;
@@ -18,7 +19,7 @@
 }
 
 .home-section1-img {
-    width: 575px;
+    width: 900px;
     height: 679px;
     z-index: 200;
     object-fit: cover;
@@ -46,15 +47,19 @@
 
 .home-section2-div {
     background-color: #eacabd;
-    margin: 10px;
     padding: 30px;
     width: 250px;
+    transition: .5s;
+}
 
+.home-section2-div:focus {
+    padding: 50px 30px 50px 30px;
+    transition: .5s;
 }
 
 .home-section2 {
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 37%, rgba(31, 37, 68, 1) 37%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 25%, rgba(31, 37, 68, 1) 25%);
 }
 
 .home-section3 {
@@ -163,6 +168,14 @@
     z-index: 300;
 }
 
+.slider-container1 {
+    width: 90%;
+}
+
+.slick-slide.slick-active {
+    display: flex;
+    justify-content: center
+}
 
 @media (max-width: 768px) {
     .home-section1-img {

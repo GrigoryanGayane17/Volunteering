@@ -8,21 +8,35 @@
     "section2": {
       "sectionName": "Group Volunteering & Workshops",
       "square_divs": {
-        "text_1": "Entity Volunteering",
-        "text_2": "Child--Volunteering",
-        "text_3": "Group Volunteering",
-        "text_4": "Family Volunteering"
+        "text_1": "Sensitive People",
+        "text_2": "Children from 15",
+        "text_3": "Sociable People",
+        "text_4": "Families or other Team",
+        "text_5": "Lively People and Teams",
+        "text_6": "Accountable People"
       }
     },
     "section3": {
-      "sectionName": "Workshops",
-      "under_text": "Setting brand and digital strategies that mobilises teams from authentic insights.",
-      "correct_texts_col1": {
-        "text_1": "I Mostly focused on the development of everyday skills.",
-        "text_2": "Workshops tend to be intermittent and take place in series, not requiring continuous attendance..",
-        "text_3": "There is no necessary screening (drop-in registrations are welcome)."
+      "sensitive": {
+        "sectionName": "Sensitivity",
+        "under_text": "At our organization, we deeply value sensitivity in our volunteers. Being sensitive is not just about being compassionate—it’s about understanding and responding to the emotions, experiences, and needs of others in meaningful ways.",
+        "correct_texts_col1": {
+          "text_1": "Sensitive volunteers can connect deeply with the individuals we serve, offering a listening ear and understanding heart when it's needed most.",
+          "text_2": "Sensitivity fosters trust and helps create safe spaces for people to share their experiences without fear of judgment.",
+          "text_3": "Volunteers who are attuned to the emotions and needs of others contribute to an environment where everyone feels heard, valued, and respected."
+        },
+        "text_col_2": "Sensitivity helps build trust, foster connection, and create a supportive environment for those we serve. It’s essential to approach each situation with care and respect, and we believe that volunteers who possess this quality are vital to achieving our mission."
       },
-      "text_col_2": "Both groups and workshops are powerful treatment modalities. Their power lies in the support and feedback given by other participants as well as by the facilitators."
+      "children": {
+        "sectionName": "Children",
+        "under_text": "We believe that young people, especially those aged 15 and older, have an incredible ability to make a difference.",
+        "correct_texts_col1": {
+          "text_1": " As a young volunteer, you can bring understanding and kindness to others, helping children and adults alike feel supported and heard. Your energy and compassion can inspire those around you.",
+          "text_2": "Whether it’s through listening, helping with activities, or simply offering encouragement, you can provide invaluable support to younger children who look up to you as a role model.",
+          "text_3": " Volunteers your age are critical in building stronger, more connected communities. You can be a bridge between different age groups and help create positive experiences for everyone involved."
+        },
+        "text_col_2": "If you're 15 or older and want to be part of something bigger, we welcome you to join us. Your willingness to help can bring hope, strength, and kindness to others, and together we can create lasting change."
+      }
     },
     "section4": {
       "sectionName": "Couples and Family Volunteering",
