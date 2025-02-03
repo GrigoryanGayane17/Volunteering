@@ -36,6 +36,46 @@
           "text_3": " Volunteers your age are critical in building stronger, more connected communities. You can be a bridge between different age groups and help create positive experiences for everyone involved."
         },
         "text_col_2": "If you're 15 or older and want to be part of something bigger, we welcome you to join us. Your willingness to help can bring hope, strength, and kindness to others, and together we can create lasting change."
+      },
+      "sociable": {
+        "sectionName": "Sociability",
+        "under_text": "At our organization, being sociable is just as important as being sensitive. A welcoming attitude, the ability to connect with others, and a willingness to engage make a huge difference in creating a positive, supportive environment for everyone involved.",
+        "correct_texts_col1": {
+          "text_1": " Being sociable helps you create meaningful relationships with the people you serve, as well as with fellow volunteers. These connections foster a sense of community and belonging, which is vital to our mission.",
+          "text_2": "When you're approachable and open, it encourages others to engage, share their experiences, and feel comfortable in the space you're helping to create.",
+          "text_3": " Sociable volunteers help set the tone for a positive and inclusive environment. Your energy can lift spirits, bring people together, and make the experience more enjoyable for everyone involved."
+        },
+        "text_col_2": "If you're someone who enjoys meeting new people, engaging with others, and creating a fun, welcoming environment, we would love to have you join us! Your sociable nature will not only make your experience more rewarding but also contribute to a vibrant, supportive community."
+      },
+      "teamsFamilies": {
+        "sectionName": "Teams snd Families",
+        "under_text": "At our organization, we welcome not only individual volunteers but also families and other teams who are eager to contribute together. Volunteering as a family or group can be an incredibly rewarding experience, offering unique benefits for everyone involved.",
+        "correct_texts_col1": {
+          "text_1": " Volunteering together helps families and teams grow closer as they work toward a common goal. It’s a chance to connect, communicate, and share meaningful experiences while making a positive impact.",
+          "text_2": "For families, volunteering provides an excellent opportunity to teach children and young adults the importance of giving back to the community, kindness, and empathy. It also promotes teamwork and cooperation.",
+          "text_3": " Working together on a volunteer project can create a deep sense of fulfillment and shared purpose. It’s an opportunity to make a difference as a collective, with each person playing an important role in achieving a larger goal."
+        },
+        "text_col_2": "We believe that when families and teams come together to volunteer, they not only help others but also enrich their own lives. If you or your group is interested in joining us, we’d love to have you! Your collective energy and enthusiasm will make a difference in the lives of those we serve."
+      },
+      "lively": {
+        "sectionName": "Lively Person",
+        "under_text": "At our organization, we believe that having lively, energetic people on our volunteer team is essential. When you bring your passion, enthusiasm, and energy to the table, it not only boosts the morale of the whole team, but it also makes a huge difference in the lives of the people we serve.",
+        "correct_texts_col1": {
+          "text_1": "Lively volunteers bring a contagious positivity that lifts the spirits of everyone around them. Your enthusiasm helps create an atmosphere of joy, making the experience more enjoyable for both volunteers and those we assist.",
+          "text_2": "People who are full of energy and life often work with their whole heart. This passion translates into a deeper commitment to the mission and a genuine desire to make a meaningful impact.",
+          "text_3": " When you're lively and engaged, you inspire others to step up their own efforts. Your energy can motivate fellow volunteers and encourage them to give their best, creating a collaborative, high-spirited environment."
+        },
+        "text_col_2": "If you’re someone who brings energy, heart, and enthusiasm to everything you do, we’d love for you to join us. Your vibrant spirit will not only make your volunteer experience rewarding but will also make a lasting difference in the lives of others."
+      },
+      "accountable": {
+        "sectionName": "Accountable Person",
+        "under_text": "At our organization, we’re looking for volunteers who are not only passionate and lively but also accountable. Being accountable means taking ownership of your responsibilities, following through on commitments, and ensuring that your actions positively impact the team and the community.",
+        "correct_texts_col1": {
+          "text_1": "When you’re accountable, others can depend on you. Whether it’s showing up on time, meeting deadlines, or completing tasks with care, your reliability builds trust within the team and with the people we serve.",
+          "text_2": "Accountability ensures that we provide consistent support to those in need. Volunteers who take responsibility for their roles help maintain a high level of service and ensure that our projects run smoothly.",
+          "text_3": "Being accountable means that you take responsibility for your part in the team’s success. It’s about showing up with a commitment to the group’s mission, which leads to stronger collaboration and more effective outcomes."
+        },
+        "text_col_2": "If you're someone who takes responsibility seriously, follows through with commitment, and believes in making a difference with integrity, we would love for you to join us. Your sense of accountability will help ensure that we continue to do great work and make lasting change."
       }
     },
     "section4": {
