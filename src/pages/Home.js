@@ -4,15 +4,27 @@ import Footer from "../components/Footer";
 import {useTranslation} from "react-i18next";
 import Slider from 'react-slick'
 
+
 function Home(props) {
-    const [word, setWord] = useState('sensitive')
+    const [wordInfo1, setWordInfo1] = useState('sensitive')
+    const [wordInfo2, setWordInfo2] = useState('info1')
     const {t, i18n} = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng); // Switch to the selected language
     };
 
-    let settings = {
-        dots: false, infinite: true, speed: 500, slidesToShow: 4, slidesToScroll: 1, initialSlide: 0, responsive: [{
+    let settings1 = {
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [{
             breakpoint: 1230, settings: {
                 slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
             }
@@ -27,8 +39,37 @@ function Home(props) {
         }]
     };
 
-    const Change = (key) => {
-        setWord(key)
+
+    const settings2 = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        responsive: [{
+            breakpoint: 1230, settings: {
+                slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
+            }
+        }, {
+            breakpoint: 980, settings: {
+                slidesToShow: 2, slidesToScroll: 1, initialSlide: 2
+            }
+        }, {
+            breakpoint: 770, settings: {
+                slidesToShow: 1, slidesToScroll: 1
+            }
+        }]
+    };
+
+    const ChangeInfo1 = (key) => {
+        setWordInfo1(key)
+    }
+
+    const ChangeInfo2 = (key) => {
+        setWordInfo2(key)
     }
 
 
@@ -64,7 +105,7 @@ function Home(props) {
                         zIndex: '200'
                     }} className={'col-lg-7 col-md-12 col-sm-12'}>
                         <img className={'home-section1-img'}
-                             src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/df-min.jpg'}/>
+                             src={'https://img.freepik.com/free-photo/thats-how-you-make-it-group-young-people-casual-clothes-working-modern-office_146671-16485.jpg?t=st=1738668267~exp=1738671867~hmac=7af66c15cb0b61c1ac2b8e98f15b72835c3b209ea1c5f7a01154b855039afe00&w=996'}/>
                         <div className={'home-section1-absolute-div1'}></div>
                         <div className={'home-section1-absolute-div2'}></div>
                     </div>
@@ -90,9 +131,9 @@ function Home(props) {
                          className={'col-12'}>
 
                         <div className="slider-container1">
-                            <Slider {...settings}>
+                            <Slider {...settings1}>
                                 <div style={{margin: '15px'}}>
-                                    <div onFocus={() => Change('sensitive')} tabIndex={'0'}
+                                    <div onFocus={() => ChangeInfo1('sensitive')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
                                             <img className={'home-section2-div-img'}
@@ -105,7 +146,7 @@ function Home(props) {
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
-                                    <div onFocus={() => Change('children')} tabIndex={'0'}
+                                    <div onFocus={() => ChangeInfo1('children')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
                                             <img className={'home-section2-div-img'}
@@ -118,7 +159,7 @@ function Home(props) {
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
-                                    <div onFocus={() => Change('sociable')} tabIndex={'0'}
+                                    <div onFocus={() => ChangeInfo1('sociable')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
                                             <img className={'home-section2-div-img'}
@@ -131,7 +172,7 @@ function Home(props) {
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
-                                    <div onFocus={() => Change('teamsFamilies')} tabIndex={'0'}
+                                    <div onFocus={() => ChangeInfo1('teamsFamilies')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
                                             <img className={'home-section2-div-img'}
@@ -144,7 +185,7 @@ function Home(props) {
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
-                                    <div onFocus={() => Change('lively')} tabIndex={'0'}
+                                    <div onFocus={() => ChangeInfo1('lively')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
                                             <img className={'home-section2-div-img'}
@@ -157,7 +198,7 @@ function Home(props) {
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
-                                    <div onFocus={() => Change('accountable')} tabIndex={'0'}
+                                    <div onFocus={() => ChangeInfo1('accountable')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
                                             <img className={'home-section2-div-img'}
@@ -175,31 +216,28 @@ function Home(props) {
                 </div>
 
                 <div className={'row'}>
-                    <div style={{padding: '100px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
+                    <div style={{padding: '50px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
                         <h1 style={{
                             color: 'white', fontSize: '50px', fontWeight: '800', marginBottom: '15px'
-                        }}>{t(`home.section3.${word}.sectionName`)}</h1>
-                        <p style={{color: 'white', fontSize: '20px'}}>{t(`home.section3.${word}.under_text`)}</p>
+                        }}>{t(`home.section3.${wordInfo1}.sectionName`)}</h1>
+                        <p style={{color: 'white', fontSize: '20px'}}>{t(`home.section3.${wordInfo1}.under_text`)}</p>
                         <div>
                             <p style={{
                                 color: 'white', fontSize: '25px'
-                            }}>✔ {t(`home.section3.${word}.correct_texts_col1.text_1`)}</p>
+                            }}>✔ {t(`home.section3.${wordInfo1}.correct_texts_col1.text_1`)}</p>
                             <p style={{
                                 color: 'white', fontSize: '25px'
-                            }}>✔ {t(`home.section3.${word}.correct_texts_col1.text_2`)}</p>
-                            <p style={{
-                                color: 'white', fontSize: '25px'
-                            }}>✔ {t(`home.section3.${word}.correct_texts_col1.text_3`)}</p>
+                            }}>✔ {t(`home.section3.${wordInfo1}.correct_texts_col1.text_2`)}</p>
                         </div>
                     </div>
-                    <div style={{padding: '100px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
+                    <div style={{padding: '50px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
                         <h2 style={{
                             color: 'white',
-                            fontSize: '40px',
+                            fontSize: '35px',
                             fontWeight: '500',
                             marginBottom: '15px',
                             lineHeight: '80px'
-                        }}>{t(`home.section3.${word}.text_col_2`)}</h2>
+                        }}>{t(`home.section3.${wordInfo1}.text_col_2`)}</h2>
                     </div>
                 </div>
             </div>
@@ -225,150 +263,117 @@ function Home(props) {
                 </div>
             </div>
 
-
             <div className={'container'}>
-                <div style={{padding: '100px 0 100px 0'}} className={'row'}>
-                    <div style={{
-                        display: 'flex', justifyContent: 'center', position: 'relative', height: '80vh', padding: '20px'
-                    }} className={'col-lg-4 col-md-6 col-sm-12'}>
-
-                        <img style={{width: '100%', objectFit: 'cover'}}
-
-                             src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/business-executives-discussing-w.jpg'}/>
-
-                        <div style={{position: 'absolute', bottom: '0', color: 'white', padding: '30px'}}>
-                            <h2 style={{fontWeight: '700'}}>{t('home.section5.sectionDivs.div_1.div_name')}</h2>
-                            <p style={{fontSize: '30px'}}>{t('home.section5.sectionDivs.div_1.main_text')}</p>
-                            <a className={'home-section5-link'}
-                               href={'#'}>{t('home.section5.sectionDivs.div_1.link')}</a>
-                        </div>
-                        }
-                    </div>
-
-                    <div style={{display: 'flex', justifyContent: 'center', height: '80vh', padding: ' 20px '}}
-
-                         className={'col-lg-4 col-md-6 col-sm-12'}>
-
-                        <div style={{color: 'white'}}>
-                            <img style={{width: '100%', height: '226px', objectFit: 'cover'}}
-                                 src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/people-chairs-communicatingqq.jpg'}/>
-                            <div style={{backgroundColor: '#1f2645', padding: '30px'}}>
-                                <h2 style={{fontWeight: '500'}}>{t('home.section5.sectionDivs.div_2.div_name')}</h2>
-                                <p style={{fontSize: '25px'}}>{t('home.section5.sectionDivs.div_2.main_text')}</p>
-                                <a className={'home-section5-link'}
-                                   href={'#'}>{t('home.section5.sectionDivs.div_2.link')}</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{display: 'flex', justifyContent: 'center', height: '80vh', padding: ' 20px '}}
-                         className={'col-lg-4 col-md-12 col-sm-12'}>
-                        <div>
-                            <div style={{backgroundColor: '#e3c4b7', padding: '30px'}}>
-                                <h2>{t('home.section5.sectionDivs.div_3.div_1.div_name')}</h2>
-                                <p>{t('home.section5.sectionDivs.div_3.div_1.main_text')}</p>
-                                <a style={{color: 'black', fontSize: '20px', fontWeight: '700'}}
-                                   href={'#'}>{t('home.section5.sectionDivs.div_3.div_1.link')}</a>
-                            </div>
-                            <div style={{padding: '40px'}}>
-                                <h2 style={{fontWeight: '700'}}>{t('home.section5.sectionDivs.div_3.div_2.div_name')}</h2>
-                                <p style={{fontSize: '20px'}}>{t('home.section5.sectionDivs.div_3.div_2.main_text')}</p>
-                                <a style={{color: 'black', fontSize: '20px', fontWeight: '700'}}
-                                   href={'#'}>{t('home.section5.sectionDivs.div_3.div_2.link')}</a>
-                            </div>
-                        </div>
+                <div className={'row'}>
+                    <div style={{padding:'100px 0'}} className={'col-12'}>
+                        <h1 style={{textAlign: 'center', fontSize: '40px',fontWeight:'800'}}>{t('home.section5.sectionName')}</h1>
                     </div>
                 </div>
             </div>
 
-            <div className={'container'}>
+
+            <div className={'container-fluid'}>
                 <div className={'row'}>
                     <div style={{
-                        padding: '50px 0 100px 0',
+                        padding: '50px 0  0',
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
                         position: 'relative',
-                    }} className={'col-lg-6 col-md-12 col-sm-12'}>
-                        <img className={'home-section6-img'}
-                             src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/full-shot-group-people-therapy_2.jpg'}/>
-                        <div className={'home-section6-absolute-div1'}></div>
-                        <div className={'home-section6-absolute-div2'}></div>
+                    }} className={'col-12'}>
+                        <div className={'content'}>
+                            <span onClick={()=>ChangeInfo2('info1')} style={{'--i': 1}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                            <span onClick={()=>ChangeInfo2('info2')} style={{'--i': 2}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                            <span onClick={()=>ChangeInfo2('info3')} style={{'--i': 3}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                            <span onClick={()=>ChangeInfo2('info4')} style={{'--i': 4}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                            <span onClick={()=>ChangeInfo2('info5')} style={{'--i': 5}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                            <span onClick={()=>ChangeInfo2('info6')} style={{'--i': 6}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                            <span onClick={()=>ChangeInfo2('info7')} style={{'--i': 7}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                            <span onClick={()=>ChangeInfo2('info8')} style={{'--i': 8}}><img
+                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
+                        </div>
+
                     </div>
                     <div style={{
                         padding: '50px', display: 'flex', alignItems: 'center',
                     }} className={'col-lg-6 col-md-12 col-sm-12'}>
                         <div>
-                            <h1 style={{fontSize: '45px', fontWeight: '700'}}>{t('home.section6.sectionName')}</h1>
-                            <p style={{fontSize: '20px', lineHeight: '40px'}}>{t('home.section6.mainText')}</p>
+                            <h1 style={{fontSize: '45px', fontWeight: '700'}}>{t(`home.section6.${wordInfo2}.sectionName`)}</h1>
+                            <p style={{fontSize: '20px', lineHeight: '40px'}}>{t(`home.section6.${wordInfo2}.mainText`)}</p>
+                            <button className={'home-section3-btn'}>{t('home.section6.button')}</button>
+                        </div>
+                    </div>
+
+                    <div style={{
+                        padding: '50px', display: 'flex', alignItems: 'center',
+                    }} className={'col-lg-6 col-md-12 col-sm-12'}>
+                        <div>
+                            <h1 style={{fontSize: '45px', fontWeight: '700'}}>{t(`home.section6.${wordInfo2}.sectionName`)}</h1>
+                            <p style={{fontSize: '20px', lineHeight: '40px'}}>{t(`home.section6.${wordInfo2}.mainText`)}</p>
                             <button className={'home-section3-btn'}>{t('home.section6.button')}</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className={'container-fluid'}>
-                <div className={'row'}>ll
-                    <div style={{
-                        padding: '100px',
-                        backgroundImage: `url('https://assets.nicepagecdn.com/d2cc3eaa/308685/images/medium-shot-people-sitting-chairs43.jpg')`,
-                        display: 'flex',
-                        justifyContent: 'flex-end',
-                        backgroundPosition: 'center'
-                    }} className={'col-12'}>
-                        <div className={'home-section4-div'}>
-                            <h1 style={{
-                                textAlign: 'center',
-                                fontSize: '40px',
-                                fontWeight: '500'
-                            }}>{t('home.section7.sectionName')}</h1>
-                            <p style={{fontSize: '20px', textAlign: 'center', lineHeight: '40px'}}>
-                                {t('home.section7.mainText')}</p>
-                            <div style={{display: 'flex', justifyContent: 'center'}}>
-                                <button
-                                    className={'home-section3-btn'}>{t('home.section7.button')}</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+            {/*<div className={'container-fluid'}>*/}
+            {/*    <div style={{position: 'relative'}} className={'row'}>*/}
+            {/*        <div style={{*/}
+            {/*            padding: '100px 0',*/}
+            {/*            display: 'flex',*/}
+            {/*            justifyContent: 'center',*/}
+            {/*            alignItems: 'center'*/}
+            {/*        }}*/}
+            {/*             className={'col-12'}>*/}
+            {/*            <div className={'section7'}>*/}
+            {/*                <div>*/}
+            {/*                    <h1 style={{fontWeight: '700', fontSize: '70px'}}>{t('home.section7.sectionName')}</h1>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
-            <div className={'container-fluid'}>
-                <div style={{position: 'relative'}} className={'row'}>
-                    <div style={{
-                        padding: '100px 0',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
-                    }}
-                         className={'col-12'}>
-                        <div className={'home-section7-div'}>
-                            <div className={'home-section7-div-div'}>
-                                <div style={{padding: '50px', width: '400px'}}>
-                                    <h1 style={{
-                                        fontSize: '40px',
-                                        fontWeight: '700'
-                                    }}> {t('home.section8.sectionName')}</h1>
-                                </div>
-                                <div style={{padding: '50px', width: '500px'}}>
-                                    <p style={{
-                                        fontSize: '20px',
-                                        lineHeight: '40px'
-                                    }}>{t('home.section8.mainText')}</p>
-                                    <button
-                                        className={'home-section3-btn'}>{t('home.section8.button')}</button>
-                                </div>
-                            </div>
-                            <div style={{padding: '0 50px 0 50px'}}>
-                                <img style={{width: '100%'}}
-                                     src={'https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/30e8f4ca27b75c6e84c868d2/srter-min.jpg'}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Footer/>
+            {/*<div className={'container'}>*/}
+            {/*    <div className={'row'}>*/}
+            {/*        <div style={{display: 'flex', justifyContent: 'center'}} className={'col-12'}>*/}
+            {/*            <div className={'slick-container2'}>*/}
+            {/*                <Slider {...settings2}>*/}
+            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
+            {/*                        <img style={{width:'200px',height:'80px',margin: '15px'}}*/}
+            {/*                            src={'https://nwafoundation.org/wp-content/uploads/2017/04/FedEx-Logo-PNG-Transparent.png'}/>*/}
+            {/*                    </div>*/}
+            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
+            {/*                        <img  style={{width:'150px',height:'150px',margin: '15px'}} src={'https://lofrev.net/wp-content/photos/2014/09/Apple-logo-png.png'}/>*/}
+            {/*                    </div>*/}
+            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
+            {/*                        <img style={{width:'200px',height:'80px',margin: '15px'}}*/}
+            {/*                            src={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png'}/>*/}
+            {/*                    </div>*/}
+            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
+            {/*                        <img style={{width:'200px',height:'200px',margin: '15px'}}*/}
+            {/*                            src={'https://purepng.com/public/uploads/large/purepng.com-walmart-vertical-logologobrand-logoiconslogos-2515199388322jxhn.png'}/>*/}
+            {/*                    </div>*/}
+            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
+            {/*                       <img style={{width:'200px',height:'80px',margin: '15px'}} src={'https://upload.wikimedia.org/wikipedia/commons/e/e5/Cocacola_caffeinefree_logo.png'}/>*/}
+            {/*                    </div>*/}
+            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
+            {/*                        <img style={{width:'200px',height:'80px',margin: '15px'}} src={'https://1000logos.net/wp-content/uploads/2017/05/Yahoo-Logo-2013.png'}/>*/}
+            {/*                    </div>*/}
+            {/*                </Slider>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<Footer/>*/}
         </div>
 
     );

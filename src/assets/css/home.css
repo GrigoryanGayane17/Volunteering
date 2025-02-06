@@ -19,10 +19,13 @@
 }
 
 .home-section1-img {
-    width: 900px;
+    width: 600px;
     height: 679px;
     z-index: 200;
     object-fit: cover;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
 .home-section1-absolute-div1 {
@@ -33,6 +36,9 @@
     top: 0;
     right: 0;
     z-index: 25;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
 .home-section1-absolute-div2 {
@@ -43,6 +49,9 @@
     bottom: 0;
     right: 0;
     z-index: 25;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
 .home-section2-div {
@@ -62,7 +71,7 @@
 
 .home-section2 {
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 25%, rgba(31, 37, 68, 1) 25%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(31, 37, 68, 1) 25%);
 }
 
 .home-section3 {
@@ -77,6 +86,9 @@
     position: absolute;
     bottom: 0;
     z-index: 25;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
 .home-section3-absolute-div2 {
@@ -96,6 +108,9 @@
     width: 809px;
     height: 579px;
     z-index: 200;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
 .home-section3-btn {
@@ -138,6 +153,9 @@
     height: 461px;
     object-fit: cover;
     z-index: 300;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
 .home-section6-absolute-div1 {
@@ -148,6 +166,9 @@
     top: 20%;
     left: 0;
     z-index: 25;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
 .home-section6-absolute-div2 {
@@ -158,13 +179,11 @@
     top: 20%;
     right: 0;
     z-index: 25;
+    -webkit-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 48px -4px rgba(0, 0, 0, 1);
 }
 
-.home-section7-div {
-    width: 1000px;
-    z-index: 300;
-
-}
 
 .home-section7-div-div {
     display: flex;
@@ -174,13 +193,82 @@
     z-index: 300;
 }
 
-.slider-container1 {
+.slider-container1, .slick-container2 {
     width: 90%;
 }
 
 .slick-slide.slick-active {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    width: 200px;
+
+}
+
+.slick-slide.slick-active.slick-current{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    width: 200px;
+}
+.slick-slide .slick-cloned {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+
+}
+.slick-slide{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+}
+
+.content{
+    position: relative;
+    width: 230px;
+    height: 230px;
+    transform-style: preserve-3d;
+    animation:animate 30s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes animate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(-360deg);
+    }
+}
+
+.content span{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top:0;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(360px);
+}
+
+.content span img{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1.5s;
+}
+
+.content span img:hover{
+    transform: translateZ(30px) scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -244,6 +332,17 @@
     .home-section7-div {
         width: 400px
     }
+
+    .content span{
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        left:0;
+        top:0;
+        transform-style: preserve-3d;
+        transform-origin: center;
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(200px);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -268,3 +367,6 @@
 @media (min-width: 992px) and (max-width: 1024px) {
 
 }
+
+
+

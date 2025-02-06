@@ -37,7 +37,8 @@ function Header(props) {
             {menu ?
                 <div>
                     <div className={'submenu'}>
-                        <svg style={{cursor:'pointer'}} onClick={handleMenu} xmlns="http://www.w3.org/2000/svg" height="48px"
+                        <svg style={{cursor: 'pointer'}} onClick={handleMenu} xmlns="http://www.w3.org/2000/svg"
+                             height="48px"
                              viewBox="0 -960 960 960"
                              width="48px" fill="#FFFFFF">
                             <path
@@ -47,20 +48,30 @@ function Header(props) {
 
                     <div className={'menu'}>
                         <div>
-                            <div style={{marginRight:'30px'}}>
-                                <button className={'header-translation-btn'} onClick={()=>changeLanguage('en')}>EN</button>
-                                <button className={'header-translation-btn'} onClick={()=>changeLanguage('ru')}>RU</button>
-                                <button className={'header-translation-btn'} onClick={()=>changeLanguage('am')}>AM</button>
+                            <div style={{marginRight: '30px'}}>
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('en')}>EN
+                                </button>
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('ru')}>RU
+                                </button>
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('am')}>AM
+                                </button>
                             </div>
-                            <div className={'links-div active'}>
-                                <Link className={'links'} to={'/'}>Home</Link>
-                            </div>
-                            <div className={'links-div'}>
-                                <Link className={'links'} to={'/about'}>About</Link>
-                            </div>
-                            <div className={'links-div'}>
-                                <Link className={'links'} to={'/team'}>Our Team</Link>
-                            </div>
+
+                            <Link className={'links'} to={'/'}>
+                                <div className={'links-div active'}>
+                                    Home
+                                </div>
+                            </Link>
+                            <Link className={'links'} to={'/about'}>
+                                <div className={'links-div'}>
+                                    About
+                                </div>
+                            </Link>
+                            <Link className={'links'} to={'/team'}>
+                                <div className={'links-div'}>
+                                    Our Team
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
