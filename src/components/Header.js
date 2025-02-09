@@ -13,6 +13,9 @@ function Header(props) {
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng); // Switch to the selected language
     };
+
+
+
     return (
         <div className={'container-fluid'}>
             <div className={'row'}>
@@ -62,14 +65,14 @@ function Header(props) {
                                     Home
                                 </div>
                             </Link>
-                            <Link className={'links'} to={'/about'}>
-                                <div className={'links-div'}>
-                                    About
-                                </div>
-                            </Link>
                             <Link className={'links'} to={'/team'}>
                                 <div className={'links-div'}>
                                     Our Team
+                                </div>
+                            </Link>
+                            <Link className={'links'} to={'/project'}>
+                                <div className={'links-div'}>
+                                    Our Projects
                                 </div>
                             </Link>
                         </div>

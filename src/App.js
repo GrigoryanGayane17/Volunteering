@@ -1,9 +1,8 @@
 import React from 'react';
-import Header from "./components/Header";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import OurTeam from "./pages/OurTeam";
+import OurProject from "./pages/OurProject";
 
 
 function App(props) {
@@ -12,8 +11,8 @@ function App(props) {
             <BrowserRouter>
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
-                    <Route path={'/about'} element={<About/>}/>
                     <Route path={'/team'} element={<OurTeam/>}/>
+                    <Route path={'/project'} element={<OurProject/>}/>
                 </Routes>
             </BrowserRouter>
         </div>

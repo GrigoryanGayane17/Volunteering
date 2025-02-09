@@ -265,115 +265,81 @@ function Home(props) {
 
             <div className={'container'}>
                 <div className={'row'}>
-                    <div style={{padding:'100px 0'}} className={'col-12'}>
-                        <h1 style={{textAlign: 'center', fontSize: '40px',fontWeight:'800'}}>{t('home.section5.sectionName')}</h1>
+                    <div style={{padding: '100px 0'}} className={'col-12'}>
+                        <h1 style={{
+                            textAlign: 'center',
+                            fontSize: '40px',
+                            fontWeight: '800'
+                        }}>{t('home.section5.sectionName')}</h1>
                     </div>
                 </div>
             </div>
 
 
             <div className={'container-fluid'}>
-                <div className={'row'}>
+                <div style={{position: 'relative'}} className={'row'}>
                     <div style={{
-                        padding: '50px 0  0',
+                        padding: '100px 0',
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center',
-                        position: 'relative',
-                    }} className={'col-12'}>
-                        <div className={'content'}>
-                            <span onClick={()=>ChangeInfo2('info1')} style={{'--i': 1}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                            <span onClick={()=>ChangeInfo2('info2')} style={{'--i': 2}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                            <span onClick={()=>ChangeInfo2('info3')} style={{'--i': 3}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                            <span onClick={()=>ChangeInfo2('info4')} style={{'--i': 4}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                            <span onClick={()=>ChangeInfo2('info5')} style={{'--i': 5}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                            <span onClick={()=>ChangeInfo2('info6')} style={{'--i': 6}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                            <span onClick={()=>ChangeInfo2('info7')} style={{'--i': 7}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                            <span onClick={()=>ChangeInfo2('info8')} style={{'--i': 8}}><img
-                                src={'https://img.freepik.com/free-photo/two-young-businessman-having-successful-meeting-restaurant_158595-5332.jpg'}/></span>
-                        </div>
-
-                    </div>
-                    <div style={{
-                        padding: '50px', display: 'flex', alignItems: 'center',
-                    }} className={'col-lg-6 col-md-12 col-sm-12'}>
-                        <div>
-                            <h1 style={{fontSize: '45px', fontWeight: '700'}}>{t(`home.section6.${wordInfo2}.sectionName`)}</h1>
-                            <p style={{fontSize: '20px', lineHeight: '40px'}}>{t(`home.section6.${wordInfo2}.mainText`)}</p>
-                            <button className={'home-section3-btn'}>{t('home.section6.button')}</button>
-                        </div>
-                    </div>
-
-                    <div style={{
-                        padding: '50px', display: 'flex', alignItems: 'center',
-                    }} className={'col-lg-6 col-md-12 col-sm-12'}>
-                        <div>
-                            <h1 style={{fontSize: '45px', fontWeight: '700'}}>{t(`home.section6.${wordInfo2}.sectionName`)}</h1>
-                            <p style={{fontSize: '20px', lineHeight: '40px'}}>{t(`home.section6.${wordInfo2}.mainText`)}</p>
-                            <button className={'home-section3-btn'}>{t('home.section6.button')}</button>
+                        alignItems: 'center'
+                    }}
+                         className={'col-12'}>
+                        <div className={'section7'}>
+                            <div>
+                                <h1 style={{fontWeight: '700', fontSize: '70px'}}>{t('home.section7.sectionName')}</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div className={'container'}>
+                <div className={'row'}>
+                    <div style={{display: 'flex', justifyContent: 'center'}} className={'col-12'}>
 
-            {/*<div className={'container-fluid'}>*/}
-            {/*    <div style={{position: 'relative'}} className={'row'}>*/}
-            {/*        <div style={{*/}
-            {/*            padding: '100px 0',*/}
-            {/*            display: 'flex',*/}
-            {/*            justifyContent: 'center',*/}
-            {/*            alignItems: 'center'*/}
-            {/*        }}*/}
-            {/*             className={'col-12'}>*/}
-            {/*            <div className={'section7'}>*/}
-            {/*                <div>*/}
-            {/*                    <h1 style={{fontWeight: '700', fontSize: '70px'}}>{t('home.section7.sectionName')}</h1>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+                        <div className="slider-container2">
 
-            {/*<div className={'container'}>*/}
-            {/*    <div className={'row'}>*/}
-            {/*        <div style={{display: 'flex', justifyContent: 'center'}} className={'col-12'}>*/}
-            {/*            <div className={'slick-container2'}>*/}
-            {/*                <Slider {...settings2}>*/}
-            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
-            {/*                        <img style={{width:'200px',height:'80px',margin: '15px'}}*/}
-            {/*                            src={'https://nwafoundation.org/wp-content/uploads/2017/04/FedEx-Logo-PNG-Transparent.png'}/>*/}
-            {/*                    </div>*/}
-            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
-            {/*                        <img  style={{width:'150px',height:'150px',margin: '15px'}} src={'https://lofrev.net/wp-content/photos/2014/09/Apple-logo-png.png'}/>*/}
-            {/*                    </div>*/}
-            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
-            {/*                        <img style={{width:'200px',height:'80px',margin: '15px'}}*/}
-            {/*                            src={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png'}/>*/}
-            {/*                    </div>*/}
-            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
-            {/*                        <img style={{width:'200px',height:'200px',margin: '15px'}}*/}
-            {/*                            src={'https://purepng.com/public/uploads/large/purepng.com-walmart-vertical-logologobrand-logoiconslogos-2515199388322jxhn.png'}/>*/}
-            {/*                    </div>*/}
-            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
-            {/*                       <img style={{width:'200px',height:'80px',margin: '15px'}} src={'https://upload.wikimedia.org/wikipedia/commons/e/e5/Cocacola_caffeinefree_logo.png'}/>*/}
-            {/*                    </div>*/}
-            {/*                    <div style={{margin: '15px',display:'flex',justifyContent:'center',alignItems:'center'}}>*/}
-            {/*                        <img style={{width:'200px',height:'80px',margin: '15px'}} src={'https://1000logos.net/wp-content/uploads/2017/05/Yahoo-Logo-2013.png'}/>*/}
-            {/*                    </div>*/}
-            {/*                </Slider>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<Footer/>*/}
+                            <div className={'content'}>
+                            <span style={{'--i': 1, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>  <img
+                                style={{width: '200px', height: '80px', margin: '15px'}}
+                                src={'https://nwafoundation.org/wp-content/uploads/2017/04/FedEx-Logo-PNG-Transparent.png'}/></span>
+                                <span
+                                    style={{'--i': 2, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
+                                    style={{width: '150px', height: '80px', margin: '15px'}}
+                                    src={'https://loodibee.com/wp-content/uploads/iPhone-logo.png'}/></span>
+                                <span
+                                    style={{'--i': 3, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
+                                    style={{width: '200px', height: '80px', margin: '15px'}}
+                                    src={'https://img.logodad.com/upload/J/zv8/Temu-Wordmark-icon.png'}/></span>
+                                <span
+                                    style={{'--i': 4, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
+                                    style={{width: '200px', height: '80px', margin: '15px'}}
+                                    src={'https://upload.wikimedia.org/wikipedia/commons/e/e5/Cocacola_caffeinefree_logo.png'}/></span>
+                                <span
+                                    style={{'--i': 5, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
+                                    style={{width: '200px', height: '80px', margin: '15px'}}
+                                    src={'https://1000logos.net/wp-content/uploads/2020/08/Shazam-Logo.png'}/></span>
+                                <span
+                                    style={{'--i': 6, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
+                                    style={{width: '200px', height: '80px', margin: '15px'}}
+                                    src={'https://logos-world.net/wp-content/uploads/2023/02/Picsart-Logo.png'}/></span>
+                                <span
+                                    style={{'--i': 7, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
+                                    style={{width: '200px', height: '80px', margin: '15px'}}
+                                    src={'https://1000logos.net/wp-content/uploads/2017/05/Yahoo-Logo-2013.png'}/></span>
+
+                                <span
+                                    style={{'--i': 8, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
+                                    style={{width: '150px', height: '80px', margin: '15px'}}
+                                    src={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mercedes-Benz_logo.svg/2560px-Mercedes-Benz_logo.svg.png'}/></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Footer/>
         </div>
 
     );

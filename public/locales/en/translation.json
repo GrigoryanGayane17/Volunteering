@@ -124,66 +124,6 @@
       "button": "learn more"
     }
   },
-  "about": {
-    "section1": {
-      "sectionName": "What is Group of Volunteering?",
-      "mainText": "Group of volunteering is a therapy format where individuals with similar issues come together to share experiences and support each other under the guidance of a trained volunteer.",
-      "button": "Learn More"
-    },
-    "section2": {
-      "sectionName": "About Us",
-      "mainText1": "Volunteering is an innovative company specializing in cutting-edge technology solutions designed to improve health and wellness. With a focus on harnessing the power of digital tools, Volunteering develops products and services aimed at enhancing the lives of individuals through personalized care and data-driven insights.",
-      "mainText2": "Volunteering is committed to improving accessibility to healthcare and making wellness more attainable for a broad range of people. By leveraging artificial intelligence, wearable devices, and health monitoring systems, Teraphi empowers users to take control of their physical and mental well-being.",
-      "button": "Learn More"
-    },
-    "section3": {
-      "sectionName": "Find the best group Volunteering",
-      "mainText": " Group Volunteering offers a safe space to share, learn, and grow together, guided by experienced professionals. Whether you’re dealing with stress, anxiety, depression, or other challenges, group therapy provides valuable insights and the opportunity to build meaningful connections.",
-      "button": "LEARN MORE"
-    },
-    "section4": {
-      "sectionName": "Online Process-oriented Training Groups",
-      "mainText": " Join our Online Process-Oriented Training Groups to explore personal growth in a supportive, virtual space. Work with experienced facilitators and connect with others to deepen self-awareness and tackle challenges.",
-      "divs": {
-        "div1": {
-          "divName": "Pre-Group Meetings",
-          "divMainText": "These sessions offer a chance to clarify expectations, set goals, and get to know fellow participants in a supportive environment."
-        },
-        "div2": {
-          "divName": "Definition and Benefits",
-          "divMainText": "Learn the definition and discover the benefits, including personal growth, skill development, and enhanced well-being."
-        },
-        "div3": {
-          "divName": "Professional Volunteer",
-          "divMainText": "A Professional Volunteer is a trained and experienced expert who provides guidance and support to individuals seeking help with mental, emotional, or behavioral challenges."
-        },
-        "div4": {
-          "divName": "New Training Group",
-          "divMainText": "Join our New Training Group to learn, grow, and connect in a supportive environment."
-        }
-      }
-    },
-    "section5": {
-      "sectionName1": "Keys to great group therapy",
-      "mainText1": "The keys to great group therapy include trust, open communication, a supportive environment, and skilled facilitation. These elements create a space where individuals can share, learn, and heal together, fostering personal growth and connection.",
-      "sectionName2": "What We Do",
-      "mainText2": "We provide high quality ONLINE group therapy training for mental health clinicians. Additionally, we offer ONLINE group therapy services to people",
-      "button": "LEARN MORE"
-    },
-    "section6": {
-      "sectionName": "Group Volunteering vs. Support Group",
-      "mainText": "Group Volunteering focuses on therapeutic techniques led by a licensed professional to address emotional or psychological challenges. Support Groups, on the other hand, provide a space for individuals with similar experiences to share and support each other. Both offer valuable benefits, but therapy involves professional guidance, while support groups emphasize peer connection."
-    },
-    "section7": {
-      "sectionName": "Affordable, private online counseling",
-      "mainText": "Talk with a licensed, professional therapist online",
-      "button": "GET STARTED"
-    },
-    "section8": {
-      "sectionName": "The Group Volunteering",
-      "mainText": "The group therapy session is a collaborative effort in which the therapist assumes clinical responsibility for the group and its members. In a typical session, which lasts about 75-90 minutes, members work to express their own problems, feelings, ideas and reactions as freely and honestly as possible."
-    }
-  },
   "team": {
     "section1": {
       "sectionName": "Our Professional Team of Volunteering",

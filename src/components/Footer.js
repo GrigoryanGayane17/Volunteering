@@ -11,7 +11,7 @@ function Footer(props) {
     return (
         <div className={'container'}>
             <div className={'row'}>
-                <div style={{padding: '100px 30px'}} className={'col-lg-6 col-md-6 col-sm-12 section8-div1'}>
+                <div style={{padding: '50px 30px'}} className={'col-lg-6 col-md-6 col-sm-12 section8-div1'}>
                     <h1 style={{
                         fontSize: '50px',
                         fontWeight: '800',
