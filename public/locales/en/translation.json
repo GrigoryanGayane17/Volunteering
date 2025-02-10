@@ -155,6 +155,109 @@
       "sectionName": "Our Professional Team of Volunteering"
     }
   },
+  "volunteering_projects": [
+    {
+      "id": "community_cleanup_initiative",
+      "title": "Community Cleanup Initiative",
+      "description": "Join this initiative to help clean up public spaces in our community. It's a great way to give back while promoting a cleaner and healthier environment for everyone.",
+      "points": [
+        "Collect and dispose of litter in public parks and streets.",
+        "Help clean and maintain community centers and local outdoor spaces.",
+        "Encourage others to join and make a bigger impact together.",
+        "Support sustainable practices by properly recycling waste materials."
+      ],
+      "location": "Downtown Community Park",
+      "requirements": [
+        "Must be able to lift and carry bags of trash.",
+        "Willingness to work outdoors for a few hours.",
+        "Teamwork and enthusiasm to work with others."
+      ],
+      "stars": "4.5",
+      "how_to_apply": "Visit our website to fill out a volunteer registration form and select a shift that works for you.",
+      "age_requirement": "18 and above"
+    },
+    {
+      "id": "youth_mentorship_program",
+      "title": "Youth Mentorship Program",
+      "description": "This program connects youth with caring mentors who can guide them through life challenges, help with academic development, and support personal growth.",
+      "points": [
+        "Provide guidance on academic subjects and study habits.",
+        "Assist with career exploration and skills development.",
+        "Encourage emotional well-being and positive life choices.",
+        "Be a consistent and supportive role model."
+      ],
+      "location": "Local Youth Center",
+      "requirements": [
+        "Experience working with children or youth.",
+        "Ability to commit to a long-term mentorship relationship.",
+        "Strong communication and listening skills."
+      ],
+      "stars": "5",
+      "how_to_apply": "Complete an application on our site and schedule an interview to ensure a good match with a mentee.",
+      "age_requirement": "21 and above"
+    },
+    {
+      "id": "food_bank_support",
+      "title": "Food Bank Support",
+      "description": "Support our local food bank by helping sort donations, package food for families in need, and assist with food distribution events.",
+      "points": [
+        "Help sort and organize food donations.",
+        "Package food boxes for families and individuals in need.",
+        "Assist during food distribution events by interacting with clients.",
+        "Ensure food safety and quality during sorting and distribution."
+      ],
+      "location": "Northside Food Bank",
+      "requirements": [
+        "Must be comfortable lifting boxes up to 20 lbs.",
+        "Good organizational and teamwork skills.",
+        "Willingness to interact with people in need in a respectful manner."
+      ],
+      "stars": "4",
+      "how_to_apply": "Sign up through our website, then come to orientation to learn more about the role and the food bank's mission.",
+      "age_requirement": "16 and above"
+    },
+    {
+      "id": "elderly_care_companion",
+      "title": "Elderly Care Companion",
+      "description": "Help elderly individuals in your community by offering companionship, support with daily activities, and enhancing their quality of life.",
+      "points": [
+        "Spend time talking and engaging in activities with elderly individuals.",
+        "Assist with light household chores and errands.",
+        "Provide emotional support and ensure their well-being.",
+        "Help with mobility and transportation to appointments if needed."
+      ],
+      "location": "Sunrise Senior Living Facility",
+      "requirements": [
+        "Empathy and patience with elderly individuals.",
+        "Ability to assist with light physical tasks.",
+        "Respect for the privacy and dignity of elderly residents."
+      ],
+      "stars": "4.8",
+      "how_to_apply": "Fill out the volunteer application on our website, and attend an orientation session to begin volunteering.",
+      "age_requirement": "18 and above"
+    },
+    {
+      "id": "environmental_education_outreach",
+      "title": "Environmental Education Outreach",
+      "description": "Join our outreach program to educate local communities about environmental conservation, sustainability, and eco-friendly practices.",
+      "points": [
+        "Organize and lead workshops on sustainability topics.",
+        "Distribute educational materials to schools and community groups.",
+        "Advocate for local environmental policies and green initiatives.",
+        "Encourage recycling, composting, and reducing waste in the community."
+      ],
+      "location": "Various Community Centers",
+      "requirements": [
+        "Strong passion for environmental issues and education.",
+        "Public speaking and presentation skills.",
+        "Ability to work well with diverse groups of people."
+      ],
+      "stars": "4.7",
+      "how_to_apply": "Complete our online volunteer application form and attend an interview to get started with the outreach program.",
+      "age_requirement": "18 and above"
+    }
+  ],
+
   "footer": {
     "sectionName": "Contact Us",
     "form": {

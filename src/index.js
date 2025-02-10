@@ -4,7 +4,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/home.css'
-import './assets/css/about.css'
 import './i18n'
 
 const Loader = () => {
