@@ -50,7 +50,7 @@ function OurTeam(props) {
                     </div>
 
                     <div style={{
-                        backgroundColor: '#c3c6e7'
+                        backgroundColor: '#D1E5F6FF'
                     }} className={'team-section2-div'}>
                         <h3 style={{fontWeight: '700', color: 'black'}}>{t('team.section2.divs.div2.divName')}</h3>
                         <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>{t('team.section2.divs.div2.divText')}</p>
@@ -64,7 +64,7 @@ function OurTeam(props) {
                     </div>
 
                     <div style={{
-                        backgroundColor: '#c3c6e7'
+                        backgroundColor: '#D1E5F6FF'
                     }} className={'team-section2-div'}>
                         <h3 style={{fontWeight: '700', color: 'black'}}>{t('team.section2.divs.div4.divName')}</h3>
                         <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>{t('team.section2.divs.div4.divText')}</p>
@@ -90,7 +90,7 @@ function OurTeam(props) {
                             <div style={{margin: '30px 40px'}} key={item.id}>
 
                                 <div style={{
-                                    backgroundColor: '#c3c6e7',
+                                    backgroundColor: '#D1E5F6FF',
                                     width: '250px',
                                     height: '250px',
                                     borderRadius: '50%',

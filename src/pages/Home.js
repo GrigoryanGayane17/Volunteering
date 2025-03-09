@@ -14,9 +14,9 @@ function Home(props) {
     };
 
     let settings1 = {
-        dots: false,
+        dots:false,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         cssEase: "linear",
         infinite: true,
@@ -77,20 +77,19 @@ function Home(props) {
         <div>
             <Header/>
 
-            <div className={'container'}>
+            <div className={'container section1'}>
                 <div className={'row'}>
                     <div style={{
-                        padding: '100px 50px',
+                        // padding: '100px 50px',
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
                         zIndex: '300'
-                    }} className={'col-lg-5 col-md-12 col-sm-12'}>
+                    }} className={'col-lg-5 col-md-12 col-sm-12 p-4'}>
                         <div>
-                            <h1 style={{
-                                fontSize: '60px', fontWeight: '800', color: '#1f2645'
+                            <h1 style={{fontWeight: '800', color: '#1f2645'
                             }}>{t('home.section1.sectionName')}</h1>
-                            <p style={{fontSize: "20px", marginTop: '25px'}}>
+                            <p style={{fontSize: "18px", marginTop: '25px'}}>
                                 {t('home.section1.mainText')}</p>
                             <button className={'home-section1-btn'}>{t('home.section1.link')}</button>
                         </div>
@@ -140,9 +139,9 @@ function Home(props) {
                                                  style={{width: '70px', height: '70px'}}
                                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/ec0be216.png'}/>
                                         </div>
-                                        <h2 style={{
+                                        <h4 style={{
                                             textAlign: 'center', marginTop: '30px', color: '#1f2543'
-                                        }}>{t('home.section2.square_divs.text_1')}</h2>
+                                        }}>{t('home.section2.square_divs.text_1')}</h4>
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
@@ -153,9 +152,9 @@ function Home(props) {
                                                  style={{width: '70px', height: '70px'}}
                                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/245a2f13.png'}/>
                                         </div>
-                                        <h2 style={{
+                                        <h4 style={{
                                             textAlign: 'center', marginTop: '30px', color: '#1f2543'
-                                        }}>{t('home.section2.square_divs.text_2')}</h2>
+                                        }}>{t('home.section2.square_divs.text_2')}</h4>
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
@@ -166,9 +165,9 @@ function Home(props) {
                                                  style={{width: '70px', height: '70px'}}
                                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/96972e44.png'}/>
                                         </div>
-                                        <h2 style={{
+                                        <h4 style={{
                                             textAlign: 'center', marginTop: '30px', color: '#1f2543'
-                                        }}>{t('home.section2.square_divs.text_3')}</h2>
+                                        }}>{t('home.section2.square_divs.text_3')}</h4>
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
@@ -179,9 +178,9 @@ function Home(props) {
                                                  style={{width: '70px', height: '70px'}}
                                                  src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/0ae08100.png'}/>
                                         </div>
-                                        <h2 style={{
+                                        <h4 style={{
                                             textAlign: 'center', marginTop: '30px', color: '#1f2543'
-                                        }}>{t('home.section2.square_divs.text_4')}</h2>
+                                        }}>{t('home.section2.square_divs.text_4')}</h4>
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
@@ -192,9 +191,9 @@ function Home(props) {
                                                  style={{width: '70px', height: '70px'}}
                                                  src={'https://cdn-icons-png.freepik.com/512/17353/17353667.png?uid=R179250677&ga=GA1.1.836210414.1706299071'}/>
                                         </div>
-                                        <h2 style={{
+                                        <h4 style={{
                                             textAlign: 'center', marginTop: '30px', color: '#1f2543'
-                                        }}>{t('home.section2.square_divs.text_5')}</h2>
+                                        }}>{t('home.section2.square_divs.text_5')}</h4>
                                     </div>
                                 </div>
                                 <div style={{margin: '15px'}}>
@@ -205,9 +204,9 @@ function Home(props) {
                                                  style={{width: '70px', height: '70px'}}
                                                  src={'https://cdn-icons-png.freepik.com/512/17492/17492491.png?uid=R179250677&ga=GA1.1.836210414.1706299071'}/>
                                         </div>
-                                        <h2 style={{
+                                        <h4 style={{
                                             textAlign: 'center', marginTop: '30px', color: '#1f2543'
-                                        }}>{t('home.section2.square_divs.text_6')}</h2>
+                                        }}>{t('home.section2.square_divs.text_6')}</h4>
                                     </div>
                                 </div>
                             </Slider>
@@ -241,105 +240,88 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            <div className={'container-fluid home-section3'}>
-                <div className={'row'}>
-                    <div style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        padding: '0 50px 100px 50px',
-                        position: 'relative'
-                    }} className={'col-12'}>
-                        <img className={'home-section3-img'}
-                             src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/Untitled-1e.jpg'}/>
-                        <div className={'home-section3-absolute-div1'}></div>
-                        <div className={'home-section3-absolute-div2'}>
-                            <h1 style={{fontSize: '40px', fontWeight: '700'}}>{t('home.section4.sectionName')}</h1>
-                            <p style={{fontSize: '20px'}}>
-                                {t('home.section4.mainText')}</p>
-                            <button className={'home-section3-btn'}>{t('home.section4.button')}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div className={'container'}>
-                <div className={'row'}>
-                    <div style={{padding: '100px 0'}} className={'col-12'}>
-                        <h1 style={{
-                            textAlign: 'center',
-                            fontSize: '40px',
-                            fontWeight: '800'
-                        }}>{t('home.section5.sectionName')}</h1>
-                    </div>
-                </div>
-            </div>
+            {/*<div className={'container-fluid home-section3'}>*/}
+            {/*    <div className={'row'}>*/}
+            {/*        <div style={{*/}
+            {/*            display: 'flex',*/}
+            {/*            justifyContent: 'center',*/}
+            {/*            alignItems: 'center',*/}
+            {/*            padding: '0 50px 100px 50px',*/}
+            {/*            position: 'relative'*/}
+            {/*        }} className={'col-12'}>*/}
+            {/*            <img className={'home-section3-img'}*/}
+            {/*                 src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/Untitled-1e.jpg'}/>*/}
+            {/*            <div className={'home-section3-absolute-div1'}></div>*/}
+            {/*            <div className={'home-section3-absolute-div2'}>*/}
+            {/*                <h1 style={{fontSize: '40px', fontWeight: '700'}}>{t('home.section4.sectionName')}</h1>*/}
+            {/*                <p style={{fontSize: '20px'}}>*/}
+            {/*                    {t('home.section4.mainText')}</p>*/}
+            {/*                <button className={'home-section3-btn'}>{t('home.section4.button')}</button>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
+            {/*<div className={'container-fluid'}>*/}
+            {/*    <div style={{position: 'relative'}} className={'row'}>*/}
+            {/*        <div style={{*/}
+            {/*            padding: '100px 0',*/}
+            {/*            display: 'flex',*/}
+            {/*            justifyContent: 'center',*/}
+            {/*            alignItems: 'center'*/}
+            {/*        }}*/}
+            {/*             className={'col-12'}>*/}
+            {/*            <div className={'section7'}>*/}
+            {/*                <div>*/}
+            {/*                    <h1 style={{fontWeight: '700', fontSize: '70px'}}>{t('home.section7.sectionName')}</h1>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
-            <div className={'container-fluid'}>
-                <div style={{position: 'relative'}} className={'row'}>
-                    <div style={{
-                        padding: '100px 0',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
-                    }}
-                         className={'col-12'}>
-                        <div className={'section7'}>
-                            <div>
-                                <h1 style={{fontWeight: '700', fontSize: '70px'}}>{t('home.section7.sectionName')}</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/*<div className={'container'}>*/}
+            {/*    <div className={'row'}>*/}
+            {/*        <div style={{display: 'flex', justifyContent: 'center'}} className={'col-12'}>*/}
+            {/*            <div className="slider-container2">*/}
+            {/*                <div className={'content'}>*/}
+            {/*                    <span*/}
+            {/*                        style={{'--i': 2, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
+            {/*                        style={{width: '150px', height: '80px', margin: '15px'}}*/}
+            {/*                        src={'https://loodibee.com/wp-content/uploads/iPhone-logo.png'}/></span>*/}
+            {/*                    <span*/}
+            {/*                        style={{'--i': 3, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
+            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
+            {/*                        src={'https://img.logodad.com/upload/J/zv8/Temu-Wordmark-icon.png'}/></span>*/}
+            {/*                    <span*/}
+            {/*                        style={{'--i': 4, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
+            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
+            {/*                        src={'https://upload.wikimedia.org/wikipedia/commons/e/e5/Cocacola_caffeinefree_logo.png'}/></span>*/}
+            {/*                    <span*/}
+            {/*                        style={{'--i': 5, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
+            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
+            {/*                        src={'https://1000logos.net/wp-content/uploads/2020/08/Shazam-Logo.png'}/></span>*/}
+            {/*                    <span*/}
+            {/*                        style={{'--i': 6, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
+            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
+            {/*                        src={'https://logos-world.net/wp-content/uploads/2023/02/Picsart-Logo.png'}/></span>*/}
+            {/*                    <span*/}
+            {/*                        style={{'--i': 7, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
+            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
+            {/*                        src={'https://1000logos.net/wp-content/uploads/2017/05/Yahoo-Logo-2013.png'}/></span>*/}
 
-            <div className={'container'}>
-                <div className={'row'}>
-                    <div style={{display: 'flex', justifyContent: 'center'}} className={'col-12'}>
+            {/*                    <span*/}
+            {/*                        style={{'--i': 8, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
+            {/*                        style={{width: '150px', height: '80px', margin: '15px'}}*/}
+            {/*                        src={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mercedes-Benz_logo.svg/2560px-Mercedes-Benz_logo.svg.png'}/></span>*/}
 
-                        <div className="slider-container2">
-
-                            <div className={'content'}>
-                            <span style={{'--i': 1, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>  <img
-                                style={{width: '200px', height: '80px', margin: '15px'}}
-                                src={'https://nwafoundation.org/wp-content/uploads/2017/04/FedEx-Logo-PNG-Transparent.png'}/></span>
-                                <span
-                                    style={{'--i': 2, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
-                                    style={{width: '150px', height: '80px', margin: '15px'}}
-                                    src={'https://loodibee.com/wp-content/uploads/iPhone-logo.png'}/></span>
-                                <span
-                                    style={{'--i': 3, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
-                                    style={{width: '200px', height: '80px', margin: '15px'}}
-                                    src={'https://img.logodad.com/upload/J/zv8/Temu-Wordmark-icon.png'}/></span>
-                                <span
-                                    style={{'--i': 4, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
-                                    style={{width: '200px', height: '80px', margin: '15px'}}
-                                    src={'https://upload.wikimedia.org/wikipedia/commons/e/e5/Cocacola_caffeinefree_logo.png'}/></span>
-                                <span
-                                    style={{'--i': 5, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
-                                    style={{width: '200px', height: '80px', margin: '15px'}}
-                                    src={'https://1000logos.net/wp-content/uploads/2020/08/Shazam-Logo.png'}/></span>
-                                <span
-                                    style={{'--i': 6, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
-                                    style={{width: '200px', height: '80px', margin: '15px'}}
-                                    src={'https://logos-world.net/wp-content/uploads/2023/02/Picsart-Logo.png'}/></span>
-                                <span
-                                    style={{'--i': 7, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
-                                    style={{width: '200px', height: '80px', margin: '15px'}}
-                                    src={'https://1000logos.net/wp-content/uploads/2017/05/Yahoo-Logo-2013.png'}/></span>
-
-                                <span
-                                    style={{'--i': 8, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img
-                                    style={{width: '150px', height: '80px', margin: '15px'}}
-                                    src={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mercedes-Benz_logo.svg/2560px-Mercedes-Benz_logo.svg.png'}/></span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <Footer/>
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<Footer/>*/}
         </div>
 
     );

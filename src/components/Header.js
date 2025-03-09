@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import logo from '../assets/images/freepik__background__92321.png'
+import menuRes from '../assets/images/menu.png'
 
 function Header(props) {
     const [menu, setMenu] = useState(false)
+    const navigate = useNavigate()
     const handleMenu = () => {
         setMenu(!menu)
     }
@@ -11,28 +14,20 @@ function Header(props) {
     const {t, i18n} = useTranslation();
 
     const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng); // Switch to the selected language
+        i18n.changeLanguage(lng);
     };
-
 
 
     return (
         <div className={'container-fluid'}>
             <div className={'row'}>
-                <div style={{
-                    padding: '0 40px 0 40px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center'
-                }}
-                     className={'col-12'}>
+                <div className={'col-12 pe-lg-5 ps-lg-5 pe-md-3 ps-md-3 pe-sm-3 ps-sm-3 d-flex justify-content-between align-items-center'}>
                     <div>
-                        <img style={{fill: '#000'}}
-                             src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/default-logo.png'}/>
+                        <img onClick={()=>navigate('/')} className={'menu-logo'}
+                             src={logo}/>
                     </div>
                     <div onClick={handleMenu}>
-                        <img style={{width: '100px', height: '100px', cursor: 'pointer'}}
-                             src={'https://cdn.icon-icons.com/icons2/3215/PNG/512/hamburger_menu_navbar_options_icon_196495.png'}/>
+                        <img className={'menu-res'} src={menuRes}/>
                     </div>
                 </div>
             </div>
@@ -61,7 +56,7 @@ function Header(props) {
                             </div>
 
                             <Link className={'links'} to={'/'}>
-                                <div className={'links-div active'}>
+                                <div className={'links-div'}>
                                     Home
                                 </div>
                             </Link>
