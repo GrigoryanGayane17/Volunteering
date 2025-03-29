@@ -11,14 +11,14 @@
         "text_1": "Чувствительные люди",
         "text_2": "Дети от 15 лет",
         "text_3": "Общительные люди",
-        "text_4": "Семьи или другие команды",
-        "text_5": "Энергичные люди и команды",
+        "text_4": "Семьи или другое",
+        "text_5": "Энергичные люди ",
         "text_6": "Ответственные люди"
       }
     },
     "section3": {
       "sensitive": {
-        "sectionName": "Находчивость",
+        "sectionName": "Развитость",
         "under_text": "В нашей организации мы глубоко ценим чувствительность наших волонтёров. Это не только сострадание, но и способность понимать и реагировать на эмоции, опыт и потребности других людей осмысленным образом.",
         "correct_texts_col1": {
           "text_1": "Находчивые волонтёры могут глубже взаимодействовать с теми, кому мы помогаем, оказывая поддержку и понимание в трудные моменты.",
@@ -199,7 +199,6 @@
       "images": [
         "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg",
         "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg",
-        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg",
         "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
       ],
       "button1": "Узнать больше !",
@@ -230,8 +229,7 @@
       "images": [
         "https://img.freepik.com/free-photo/portrait-teenage-friends-smiling_23-2149260542.jpg",
         "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg",
-        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg",
-        "https://img.freepik.com/premium-photo/christian-family-groups-holding-hands-praying_562859-5080.jpg"
+        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
       ],
       "button1": "Узнать больше !",
       "button2": "Дать заявку !"

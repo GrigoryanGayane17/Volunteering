@@ -21,7 +21,7 @@ function Home(props) {
         cssEase: "linear",
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [{
@@ -80,7 +80,6 @@ function Home(props) {
             <div className={'container section1'}>
                 <div className={'row'}>
                     <div style={{
-                        // padding: '100px 50px',
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
@@ -113,10 +112,8 @@ function Home(props) {
 
             <div className={'container-fluid home-section2'}>
                 <div className={'row'}>
-                    <div style={{padding: '100px 30px'}} className={'col-12'}>
-                        <h1 style={{
-                            fontWeight: '800', fontSize: '60px', textAlign: 'center'
-                        }}>{t('home.section2.sectionName')}</h1>
+                    <div style={{padding: '30px'}} className={'col-12'}>
+                        <h1 className={'home-section2-h1'}>{t('home.section2.sectionName')}</h1>
                     </div>
                 </div>
                 <div className={'row'}>
@@ -125,7 +122,7 @@ function Home(props) {
                         justifyContent: 'center',
                         alignItems: 'center',
                         flexWrap: 'wrap',
-                        padding: '50px 30px'
+                        padding: '50px 0'
                     }}
                          className={'col-12'}>
 
@@ -215,10 +212,10 @@ function Home(props) {
                 </div>
 
                 <div className={'row'}>
-                    <div style={{padding: '50px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
-                        <h1 style={{
-                            color: 'white', fontSize: '50px', fontWeight: '800', marginBottom: '15px'
-                        }}>{t(`home.section3.${wordInfo1}.sectionName`)}</h1>
+                    <div style={{padding: '30px 15px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
+                        <h3 style={{
+                            color: 'white', fontSize: '35px', fontWeight: '800', marginBottom: '15px'
+                        }}>{t(`home.section3.${wordInfo1}.sectionName`)}</h3>
                         <p style={{color: 'white', fontSize: '20px'}}>{t(`home.section3.${wordInfo1}.under_text`)}</p>
                         <div>
                             <p style={{
@@ -230,56 +227,52 @@ function Home(props) {
                         </div>
                     </div>
                     <div style={{padding: '50px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
-                        <h2 style={{
-                            color: 'white',
-                            fontSize: '35px',
-                            fontWeight: '500',
-                            marginBottom: '15px',
-                            lineHeight: '80px'
-                        }}>{t(`home.section3.${wordInfo1}.text_col_2`)}</h2>
+                        <h2 className={'home-section2-big-text'}>{t(`home.section3.${wordInfo1}.text_col_2`)}</h2>
                     </div>
                 </div>
             </div>
 
-            {/*<div className={'container-fluid home-section3'}>*/}
-            {/*    <div className={'row'}>*/}
-            {/*        <div style={{*/}
-            {/*            display: 'flex',*/}
-            {/*            justifyContent: 'center',*/}
-            {/*            alignItems: 'center',*/}
-            {/*            padding: '0 50px 100px 50px',*/}
-            {/*            position: 'relative'*/}
-            {/*        }} className={'col-12'}>*/}
-            {/*            <img className={'home-section3-img'}*/}
-            {/*                 src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/Untitled-1e.jpg'}/>*/}
-            {/*            <div className={'home-section3-absolute-div1'}></div>*/}
-            {/*            <div className={'home-section3-absolute-div2'}>*/}
-            {/*                <h1 style={{fontSize: '40px', fontWeight: '700'}}>{t('home.section4.sectionName')}</h1>*/}
-            {/*                <p style={{fontSize: '20px'}}>*/}
-            {/*                    {t('home.section4.mainText')}</p>*/}
-            {/*                <button className={'home-section3-btn'}>{t('home.section4.button')}</button>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className={'container-fluid home-section3'}>
+                <div className={'row'}>
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        padding: '0 0 100px 0',
+                        position: 'relative'
+                    }} className={'col-12'}>
+                        <img className={'home-section3-img'}
+                             src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/Untitled-1e.jpg'}/>
+                        <div className={'home-section3-absolute-div1'}></div>
+                        <div className={'home-section3-absolute-div2'}>
+                            <div>
+                                <h1 style={{fontSize: '40px', fontWeight: '700'}}>{t('home.section4.sectionName')}</h1>
+                                <p style={{fontSize: '20px'}}>
+                                    {t('home.section4.mainText')}</p>
+                                <button className={'home-section3-btn'}>{t('home.section4.button')}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            {/*<div className={'container-fluid'}>*/}
-            {/*    <div style={{position: 'relative'}} className={'row'}>*/}
-            {/*        <div style={{*/}
-            {/*            padding: '100px 0',*/}
-            {/*            display: 'flex',*/}
-            {/*            justifyContent: 'center',*/}
-            {/*            alignItems: 'center'*/}
-            {/*        }}*/}
-            {/*             className={'col-12'}>*/}
-            {/*            <div className={'section7'}>*/}
-            {/*                <div>*/}
-            {/*                    <h1 style={{fontWeight: '700', fontSize: '70px'}}>{t('home.section7.sectionName')}</h1>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className={'container-fluid'}>
+                <div style={{position: 'relaive'}} className={'row'}>
+                    <div style={{
+                        padding: '100px 0',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}
+                         className={'col-12'}>
+                        <div className={'section7'}>
+                            <div>
+                                <h1 style={{fontWeight: '700', fontSize: '40px',textAlign:'center'}}>{t('home.section7.sectionName')}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             {/*<div className={'container'}>*/}
             {/*    <div className={'row'}>*/}

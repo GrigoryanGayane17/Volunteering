@@ -25,15 +25,15 @@ const Apply = () => {
                 <button
                     style={{border:'none',background:'transparent'}}
                     variant="primary"
-                    className="position-absolute top-0 end-0 m-2 fs-1 :hover-border-gray-200"
+                    className="position-absolute top-0 end-0 m-0 fs-1 :hover-border-gray-200"
                     onClick={() => navigate('/project')}
                 >
                     &times;
                 </button>
                 <Card.Body>
-                    <h2 className="text-center mb-4">{t("apply.h1")}</h2>
+                    <h3 className="text-center">{t("apply.h1")}</h3>
                     <Form>
-                        <Form.Group className="mb-3 d-flex justify-content-center">
+                        <Form.Group className="mb-3 d-flex justify-content-center flex-wrap">
                             <div className="d-flex align-items-center gap-2 m-4">
                                 <Form.Check
                                     type="radio"

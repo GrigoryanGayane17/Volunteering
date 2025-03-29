@@ -23,9 +23,11 @@ function OurTeam(props) {
                          src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/full-shot-people-sitting-chairs8967.jpg'}/>
                     <div className={'team-section1-absolute-div1'}></div>
                     <div className={'team-section1-absolute-div2'}>
-                        <h1 className={'team-section1-absolute-div1-h1'}>{t('team.section1.sectionName')}</h1>
-                        <p style={{fontSize: '20px', lineHeight: '40px'}}>{t('team.section1.mainText')}</p>
-                        <button className={'team-section1-btn'}>{t('team.section1.button')}</button>
+                        <div>
+                            <h1 className={'team-section1-absolute-div1-h1'}>{t('team.section1.sectionName')}</h1>
+                            <p style={{fontSize: '20px', lineHeight: '25px'}}>{t('team.section1.mainText')}</p>
+                            <button className={'team-section1-btn'}>{t('team.section1.button')}</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -33,14 +35,14 @@ function OurTeam(props) {
 
         <div className={'container'}>
             <div style={{padding: '100px 0 0 0 '}} className={'row'}>
-                <div style={{padding: '100px 0 0 0'}} className={'col-12'}>
+                <div style={{padding: '50px 0 0 0'}} className={'col-12'}>
                     <h1 style={{fontSize: '50px', fontWeight: '800', textAlign: 'center'}}>{t('team.section2.sectionName')}</h1>
                 </div>
             </div>
         </div>
 
         <div className={'container'}>
-            <div style={{padding: '100px 0'}} className={'row'}>
+            <div style={{padding: '50px 0'}} className={'row'}>
                 <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}} className={'col-12'}>
                     <div style={{
                         backgroundColor: '#1f2645'
@@ -76,7 +78,7 @@ function OurTeam(props) {
         <div className={'container'}>
             <div className={'row'}>
                 <div style={{padding:'0 20px 80px 20px'}} className={'col-12'}>
-                    <h1 style={{fontSize: '50px', fontWeight: '800', textAlign: 'center'}}>{t('team.section3.sectionName')}</h1>
+                    <h1 style={{fontSize: '30px', fontWeight: '800', textAlign: 'center'}}>{t('team.section3.sectionName')}</h1>
                 </div>
             </div>
         </div>
@@ -85,9 +87,9 @@ function OurTeam(props) {
         <div className={'container'}>
             <div className={'row'}>
                 <div className={'col-12'}>
-                    <div style={{display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap'}}>
+                    <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
                         {usersJson.map((item) => (
-                            <div style={{margin: '30px 40px'}} key={item.id}>
+                            <div style={{margin: '30px'}} key={item.id}>
 
                                 <div style={{
                                     backgroundColor: '#D1E5F6FF',

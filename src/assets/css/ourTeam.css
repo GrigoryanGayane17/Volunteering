@@ -38,10 +38,13 @@ body {
     position: absolute;
     width: 600px;
     background-color: #ffffff;
-    bottom: -20%;
+    bottom: -5%;
     left: 0;
     z-index: 300;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     -webkit-box-shadow: 0px 0px 35px 0px rgba(184, 177, 177, 1);
     -moz-box-shadow: 0px 0px 35px 0px rgba(184, 177, 177, 1);
     box-shadow: 0px 0px 35px 0px rgba(184, 177, 177, 1);
@@ -67,7 +70,7 @@ body {
 }
 
 .team-section1-absolute-div1-h1 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 800;
     color: #1f2544
 }
@@ -86,8 +89,8 @@ body {
 
 @media (max-width: 768px) {
     .team-section1-img {
-        width: 409px;
-        height: 209px;
+        width: 100%;
+        height: 100vh;
     }
 
     .team-section1-absolute-div1 {
@@ -98,14 +101,16 @@ body {
 
     .team-section1-absolute-div2 {
         width: 100%;
-        bottom: 0;
+        top:20%;
+        height: 100vh;
         box-shadow: 0 0 10px 5px gray;
+        background-color: rgba(255, 255, 255, 0.52);
     }
 
     .team-section1-absolute-div1-h1 {
         font-size: 22px;
         font-weight: 800;
-        color: #1f2544
+        color: #1f2544;
     }
 
     .team-section1 {
@@ -115,7 +120,7 @@ body {
     .team-section2-div {
         padding: 30px 20px;
         width: 100%;
-        height: 200px;
+        /*height: 300px;*/
     }
 }
 
