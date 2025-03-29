@@ -1,0 +1,365 @@
+{
+  "home": {
+    "section1": {
+      "sectionName": "Welcome to Our Volunteer Family!",
+      "mainText": "We are so excited to have you join us as a volunteer! Your time, energy, and commitment mean the world to us, and we are truly grateful for your willingness to contribute to our mission. Together, we are making a difference, and every action you take has a ripple effect that helps create positive change. ",
+      "link": "Learn more"
+    },
+    "section2": {
+      "sectionName": "Group Volunteering & Workshops",
+      "square_divs": {
+        "text_1": "Sensitive People",
+        "text_2": "Children from 15",
+        "text_3": "Sociable People",
+        "text_4": "Families or other",
+        "text_5": "Lively People ",
+        "text_6": "Accountable People"
+      }
+    },
+    "section3": {
+      "sensitive": {
+        "sectionName": "Sensitivity",
+        "under_text": "At our organization, we deeply value sensitivity in our volunteers. Being sensitive is not just about being compassionate—it’s about understanding and responding to the emotions, experiences, and needs of others in meaningful ways.",
+        "correct_texts_col1": {
+          "text_1": "Sensitive volunteers can connect deeply with the individuals we serve, offering a listening ear and understanding heart when it's needed most.",
+          "text_2": "Sensitivity fosters trust and helps create safe spaces for people to share their experiences without fear of judgment."
+        },
+        "text_col_2": "Sensitivity helps build trust, foster connection, and create a supportive environment for those we serve. It’s essential to approach each situation with care and respect, and we believe that volunteers who possess this quality are vital to achieving our mission."
+      },
+      "children": {
+        "sectionName": "Children",
+        "under_text": "We believe that young people, especially those aged 15 and older, have an incredible ability to make a difference.",
+        "correct_texts_col1": {
+          "text_1": " As a young volunteer, you can bring understanding and kindness to others, helping children and adults alike feel supported and heard. Your energy and compassion can inspire those around you.",
+          "text_2": "Whether it’s through listening, helping with activities, or simply offering encouragement, you can provide invaluable support to younger children who look up to you as a role model."
+        },
+        "text_col_2": "If you're 15 or older and want to be part of something bigger, we welcome you to join us. Your willingness to help can bring hope, strength, and kindness to others, and together we can create lasting change."
+      },
+      "sociable": {
+        "sectionName": "Sociability",
+        "under_text": "At our organization, being sociable is just as important as being sensitive. A welcoming attitude, the ability to connect with others, and a willingness to engage make a huge difference in creating a positive, supportive environment for everyone involved.",
+        "correct_texts_col1": {
+          "text_1": " Being sociable helps you create meaningful relationships with the people you serve, as well as with fellow volunteers. These connections foster a sense of community and belonging, which is vital to our mission.",
+          "text_2": "When you're approachable and open, it encourages others to engage, share their experiences, and feel comfortable in the space you're helping to create."
+        },
+        "text_col_2": "If you're someone who enjoys meeting new people, engaging with others, and creating a fun, welcoming environment, we would love to have you join us! Your sociable nature will not only make your experience more rewarding but also contribute to a vibrant, supportive community."
+      },
+      "teamsFamilies": {
+        "sectionName": "Teams snd Families",
+        "under_text": "At our organization, we welcome not only individual volunteers but also families and other teams who are eager to contribute together. Volunteering as a family or group can be an incredibly rewarding experience, offering unique benefits for everyone involved.",
+        "correct_texts_col1": {
+          "text_1": " Volunteering together helps families and teams grow closer as they work toward a common goal. It’s a chance to connect, communicate, and share meaningful experiences while making a positive impact.",
+          "text_2": "For families, volunteering provides an excellent opportunity to teach children and young adults the importance of giving back to the community, kindness, and empathy. It also promotes teamwork and cooperation."
+        },
+        "text_col_2": "We believe that when families and teams come together to volunteer, they not only help others but also enrich their own lives. If you or your group is interested in joining us, we’d love to have you! Your collective energy and enthusiasm will make a difference in the lives of those we serve."
+      },
+      "lively": {
+        "sectionName": "Lively Person",
+        "under_text": "At our organization, we believe that having lively, energetic people on our volunteer team is essential. When you bring your passion, enthusiasm, and energy to the table, it not only boosts the morale of the whole team, but it also makes a huge difference in the lives of the people we serve.",
+        "correct_texts_col1": {
+          "text_1": "Lively volunteers bring a contagious positivity that lifts the spirits of everyone around them. Your enthusiasm helps create an atmosphere of joy, making the experience more enjoyable for both volunteers and those we assist.",
+          "text_2": "People who are full of energy and life often work with their whole heart. This passion translates into a deeper commitment to the mission and a genuine desire to make a meaningful impact."
+        },
+        "text_col_2": "If you’re someone who brings energy, heart, and enthusiasm to everything you do, we’d love for you to join us. Your vibrant spirit will not only make your volunteer experience rewarding but will also make a lasting difference in the lives of others."
+      },
+      "accountable": {
+        "sectionName": "Accountable Person",
+        "under_text": "At our organization, we’re looking for volunteers who are not only passionate and lively but also accountable. Being accountable means taking ownership of your responsibilities, following through on commitments, and ensuring that your actions positively impact the team and the community.",
+        "correct_texts_col1": {
+          "text_1": "When you’re accountable, others can depend on you. Whether it’s showing up on time, meeting deadlines, or completing tasks with care, your reliability builds trust within the team and with the people we serve.",
+          "text_2": "Accountability ensures that we provide consistent support to those in need. Volunteers who take responsibility for their roles help maintain a high level of service and ensure that our projects run smoothly."
+        },
+        "text_col_2": "If you're someone who takes responsibility seriously, follows through with commitment, and believes in making a difference with integrity, we would love for you to join us. Your sense of accountability will help ensure that we continue to do great work and make lasting change."
+      }
+    },
+    "section4": {
+      "sectionName": "Couples and Family Volunteering",
+      "mainText": "Couples and family Volunteering helps improve communication, resolve conflicts, and strengthen relationships for greater harmony and emotional well-being.",
+      "button": "learn more"
+    },
+    "section6": {
+      "info1": {
+        "sectionName": "Volunteering and Counselling Services",
+        "mainText": "Volunteering and Counselling Services offer professional support for mental health and emotional challenges. Through personalized sessions, trained therapists help individuals manage stress, anxiety, depression, and life transitions, promoting overall well-being and personal growth."
+      },
+      "info2": {
+        "sectionName": "Lorem ipsum dolor sit amet, consectetur adipisicing .",
+        "mainText": "dipisci amet architecto beatae dicta distinctio earum eligendi est, hic illo impedit laboriosam minus nisi nobis placeat quam repellat repudiandae velit voluptatum! Alias atque distinctio, in perspiciatis provident quae ut?"
+      },
+      "info3": {
+        "sectionName": "Lorem ipsum dolor sit amet, consectetur adipisicing .",
+        "mainText": "dipisci amet architecto beatae dicta distinctio earum eligendi est, hic illo impedit laboriosam minus nisi nobis placeat quam repellat repudiandae velit voluptatum! Alias atque distinctio, in perspiciatis provident quae ut?"
+      },
+      "info4": {
+        "sectionName": "Lorem ipsum dolor sit amet, consectetur adipisicing .",
+        "mainText": "dipisci amet architecto beatae dicta distinctio earum eligendi est, hic illo impedit laboriosam minus nisi nobis placeat quam repellat repudiandae velit voluptatum! Alias atque distinctio, in perspiciatis provident quae ut?"
+      },
+      "info5": {
+        "sectionName": "Lorem ipsum dolor sit amet, consectetur adipisicing .",
+        "mainText": "dipisci amet architecto beatae dicta distinctio earum eligendi est, hic illo impedit laboriosam minus nisi nobis placeat quam repellat repudiandae velit voluptatum! Alias atque distinctio, in perspiciatis provident quae ut?"
+      },
+      "info6": {
+        "sectionName": "Lorem ipsum dolor sit amet, consectetur adipisicing .",
+        "mainText": "dipisci amet architecto beatae dicta distinctio earum eligendi est, hic illo impedit laboriosam minus nisi nobis placeat quam repellat repudiandae velit voluptatum! Alias atque distinctio, in perspiciatis provident quae ut?"
+      },
+      "info7": {
+        "sectionName": "Lorem ipsum dolor sit amet, consectetur adipisicing .",
+        "mainText": "dipisci amet architecto beatae dicta distinctio earum eligendi est, hic illo impedit laboriosam minus nisi nobis placeat quam repellat repudiandae velit voluptatum! Alias atque distinctio, in perspiciatis provident quae ut?"
+      },
+      "info8": {
+        "sectionName": "Lorem ipsum dolor sit amet, consectetur adipisicing .",
+        "mainText": "dipisci amet architecto beatae dicta distinctio earum eligendi est, hic illo impedit laboriosam minus nisi nobis placeat quam repellat repudiandae velit voluptatum! Alias atque distinctio, in perspiciatis provident quae ut?"
+      },
+      "button": "Learn More"
+    },
+    "section7": {
+      "sectionName": "We Work With"
+    },
+    "section8": {
+      "sectionName": "Understanding group of Volunteering",
+      "mainText": "Understanding group of volunteering involves recognizing it as a powerful and supportive form of therapy where individuals facing similar challenges come together to share their experiences, gain insights, and support one another. Led by a trained therapist, group therapy creates a safe and structured environment for personal growth.",
+      "button": "learn more"
+    }
+  },
+  "team": {
+    "section1": {
+      "sectionName": "Our Professional Team of Volunteering",
+      "mainText": "Our passionate team of volunteers works together to create lasting change, making a meaningful impact in the communities we serve.",
+      "button": "learn more"
+    },
+    "section2": {
+      "sectionName": "WHO WE ARE",
+      "divs": {
+        "div1": {
+          "divName": "How we are unique",
+          "divText": "We stand at the heart of a global, purpose-driven, multi-sport ecosystem."
+        },
+        "div2": {
+          "divName": "What we do",
+          "divText": "We stand at the heart of a global, purpose-driven, multi-sport ecosystem."
+        },
+        "div3": {
+          "divName": "What we value",
+          "divText": "We value empathy, growth, and personalized care to support well-being."
+        },
+        "div4": {
+          "divName": "People & Careers",
+          "divText": "we support our people’s growth, fostering a fulfilling and impactful career environment."
+        }
+      }
+    },
+    "section3": {
+      "sectionName": "Our Professional Team of Volunteering"
+    }
+  },
+  "volunteering_projects": [
+    {
+      "id": "community_cleanup_initiative",
+      "title": "Community Cleanup Initiative",
+      "main_description": "Join this initiative to help clean up public spaces in our community. It's a great way to give back while promoting a cleaner and healthier environment for everyone.",
+      "description": "Join us in making a real difference in our community by participating in our public space cleanup initiative! This is a fantastic opportunity to give back while contributing to a cleaner, greener, and healthier environment for everyone. Whether you're passionate about nature, want to help improve local spaces, or simply love being part of something meaningful, this is your chance to get involved. Together, we can create a vibrant, litter-free community that benefits all. Grab your gloves, bring your friends, and let’s roll up our sleeves to make our neighborhood shine!",
+      "points": [
+        "Collect and dispose of litter in public parks and streets.",
+        "Help clean and maintain community centers and local outdoor spaces.",
+        "Encourage others to join and make a bigger impact together.",
+        "Support sustainable practices by properly recycling waste materials."
+      ],
+      "location": "Downtown Community Park",
+      "requirements": [
+        "Must be able to lift and carry bags of trash.",
+        "Willingness to work outdoors for a few hours.",
+        "Teamwork and enthusiasm to work with others."
+      ],
+      "stars": "⭐⭐⭐⭐",
+      "how_to_apply": "Visit our website to fill out a volunteer registration form and select a shift that works for you.",
+      "age_requirement": "18,18 + ",
+      "main_image": "https://img.freepik.com/free-photo/people-doing-community-service-by-collecting-trash-outdoors_23-2149109153.jpg?t=st=1739208485~exp=1739212085~hmac=dda4ff8b0f53c393a29da91b131b89ddda42f62b4f490e5f56bb59d1c14fcd69&w=996",
+      "images": [
+        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg?t=st=1739208579~exp=1739212179~hmac=6f08431cd96187352a74640bdffec7c3d1e20e88d2e51dbd5f96fb196bb63348&w=996",
+        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg?t=st=1739208579~exp=1739212179~hmac=6f08431cd96187352a74640bdffec7c3d1e20e88d2e51dbd5f96fb196bb63348&w=996",
+        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg?t=st=1739208579~exp=1739212179~hmac=6f08431cd96187352a74640bdffec7c3d1e20e88d2e51dbd5f96fb196bb63348&w=996"
+      ],
+      "button1": "More !",
+      "button2": "Want to apply ?"
+    },
+    {
+      "id": "youth_mentorship_program",
+      "title": "Youth Mentorship Program",
+      "description": "This program is dedicated to empowering young people by connecting them with compassionate mentors who provide invaluable guidance through life's challenges. Whether it's navigating academic hurdles, building self-confidence, or tackling personal obstacles, our mentors are here to support and inspire. With their expertise and genuine care, they help young individuals unlock their full potential, guiding them towards success in school, personal growth, and beyond. It's more than just mentorship; it's about fostering lasting relationships that shape brighter futures. Get involved and be part of a transformative journey today!",
+      "main_description": "This program connects youth with caring mentors who can guide them through life challenges, help with academic development, and support personal growth.",
+      "points": [
+        "Provide guidance on academic subjects and study habits.",
+        "Assist with career exploration and skills development.",
+        "Encourage emotional well-being and positive life choices.",
+        "Be a consistent and supportive role model."
+      ],
+      "location": "Local Youth Center",
+      "requirements": [
+        "Experience working with children or youth.",
+        "Ability to commit to a long-term mentorship relationship.",
+        "Strong communication and listening skills."
+      ],
+      "stars": "⭐⭐⭐⭐⭐",
+      "how_to_apply": "Complete an application on our site and schedule an interview to ensure a good match with a mentee.",
+      "age_requirement": "21,21 +",
+      "main_image": "https://img.freepik.com/free-photo/youth-vintage-vector-graphic-concept_53876-21297.jpg",
+      "images": [
+        "https://img.freepik.com/free-photo/portrait-teenage-friends-smiling_23-2149260542.jpg?t=st=1739562814~exp=1739566414~hmac=316c6e88aab88b69cf88caef3a811c5b2c0b67a18a916aa13830107239ae9891&w=740 ",
+        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg",
+        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
+      ],
+      "button1": "More !",
+      "button2": "Want to apply ?"
+    },
+    {
+      "id": "food_bank_support",
+      "title": "Food Bank Support",
+      "main_description": "Support our local food bank by helping sort donations, package food for families in need, and assist with food distribution events.",
+      "description": "Join us in making a meaningful impact by supporting our local food bank! Lend a hand sorting donations, packing food for families facing tough times, and helping out at food distribution events. Your time and effort will directly support those in need, ensuring that no one in our community goes hungry. By volunteering, you’re not just giving back—you're helping to create a stronger, more connected neighborhood. Every small action makes a big difference, so come be a part of something that truly matters and spread kindness one meal at a time!",
+      "points": [
+        "Help sort and organize food donations.",
+        "Package food boxes for families and individuals in need.",
+        "Assist during food distribution events by interacting with clients.",
+        "Ensure food safety and quality during sorting and distribution."
+      ],
+      "location": "Northside Food Bank",
+      "requirements": [
+        "Must be comfortable lifting boxes up to 20 lbs.",
+        "Good organizational and teamwork skills.",
+        "Willingness to interact with people in need in a respectful manner."
+      ],
+      "stars": "⭐⭐⭐⭐",
+      "how_to_apply": "Sign up through our website, then come to orientation to learn more about the role and the food bank's mission.",
+      "age_requirement": "16 , 16 +",
+      "main_image": "https://img.freepik.com/premium-photo/professional-team-cooks-chefs-preparing-meal-busy-hotel-restaurant-kitchen_530697-27607.jpg",
+      "images": [
+        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg",
+        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg",
+        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+      ],
+      "button1": "More !",
+      "button2": "Want to apply ?"
+    },
+    {
+      "id": "elderly_care_companion",
+      "title": "Elderly Care Companion",
+      "main_description": "Help elderly individuals in your community by offering companionship, support with daily activities, and enhancing their quality of life.",
+      "description": "Make a lasting impact in your community by offering companionship and support to elderly individuals. Whether it's lending a hand with daily tasks, sharing meaningful conversations, or simply being there to brighten their day, your involvement can truly enhance their quality of life. Many older adults face loneliness and challenges, but with your kindness and care, you can help them feel more connected, valued, and supported. By offering your time, you'll not only make their lives easier, but you'll also forge meaningful relationships that bring joy and comfort to both you and them. Become a source of light in the lives of the elderly today!",
+      "points": [
+        "Spend time talking and engaging in activities with elderly individuals.",
+        "Assist with light household chores and errands.",
+        "Provide emotional support and ensure their well-being.",
+        "Help with mobility and transportation to appointments if needed."
+      ],
+      "location": "Sunrise Senior Living Facility",
+      "requirements": [
+        "Empathy and patience with elderly individuals.",
+        "Ability to assist with light physical tasks.",
+        "Respect for the privacy and dignity of elderly residents."
+      ],
+      "stars": "⭐⭐⭐⭐⭐",
+      "how_to_apply": "Fill out the volunteer application on our website, and attend an orientation session to begin volunteering.",
+      "age_requirement": "18 , 18 +",
+      "main_image": "https://img.freepik.com/free-vector/younger-generation-taking-care-helping-elders_52683-38555.jpg",
+      "images": [
+        "https://img.freepik.com/free-photo/lifestyle-scene-from-community-showing-care-support-from-people_23-2151261188.jpg",
+        "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg",
+        "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg",
+        "https://img.freepik.com/free-photo/people-taking-community-action_23-2149232543.jpg"
+      ],
+      "button1": "More !",
+      "button2": "Want to apply ?"
+    },
+    {
+      "id": "janagas_concert_volunteers",
+      "title": "Janaga Concert Opportunity",
+      "main_description": "Janaga will be performing a special concert in Armenia on February 14th, and we need volunteers to help make this event a success! Volunteers will assist with tasks such as event setup, guiding guests and etc. ",
+      "description": "Get ready for an unforgettable experience as Janaga takes the stage for a special concert in Armenia on February 14th! We need passionate volunteers like you to help bring this amazing event to life. From assisting with event setup to guiding guests and ensuring everything runs smoothly, your support will make this night truly memorable. This is your chance to be part of something extraordinary, meet fellow music lovers, and contribute to the success of a once-in-a-lifetime performance. Join us and be a key part of this incredible event—let's make it a night to remember!",
+      "points": [
+        "Assist with event setup and breakdown.",
+        "Help guide and usher guests to their seats.",
+        "Manage guest registration and check-in.",
+        "Support event coordinators in various tasks to ensure a smooth experience.",
+        "Ensure a safe and enjoyable environment for all concert-goers."
+      ],
+      "location": "Armenia, [Concert Venue Name]",
+      "requirements": [
+        "Enthusiasm for live events and concerts.",
+        "Good communication and customer service skills.",
+        "Ability to work in a team and remain calm under pressure.",
+        "Physical stamina to assist with event setup and breakdown."
+      ],
+      "stars": "⭐⭐⭐⭐⭐",
+      "how_to_apply": "If you're excited about being part of Janaga's concert, sign up as a volunteer by visiting our volunteer registration page. Fill out the form and choose your preferred shift. Volunteers will receive more details about the event closer to the concert date.",
+      "age_requirement": "16 , 16+",
+      "main_image": "https://cdn.kassir.ru/msk/poster/3e/3eee4d874e5657c3baa32b0b243aa494.jpg",
+      "images": [
+        "https://cdnlv.redkassa.ru/live/sitenew/picture/a989ab57-eae5-471b-a048-c52e99aeeaaa",
+        "https://cdn-image.zvuk.com/pic?type=release&id=11873375&size=medium&hash=d401fffc-3159-413d-9a61-356253c1e814",
+        "https://lastfm.freetls.fastly.net/i/u/ar0/34688244f92db5aaa230bf09d594503b.jpg",
+        "https://lastfm.freetls.fastly.net/i/u/ar0/34688244f92db5aaa230bf09d594503b.jpg"
+      ],
+      "button1": "More !",
+      "button2": "Want to apply ?"
+    }
+  ],
+  "apply": {
+    "h1": "I'm a ...",
+    "Worker": "Worker",
+    "Student": "Student",
+    "Other": "Other",
+    "button": "Next"
+  },
+  "ifWorker": {
+    "h1": "We need some information to apply",
+    "Name": "Name",
+    "Age": "Age",
+    "Phone": "Phone",
+    "Email": "Email",
+    "EmailPassword": "Password of Email",
+    "Country": "Country",
+    "WorkCompany": "Work Company",
+    "Profession": "Profession",
+    "Skills": "Skills",
+    "button": "Apply"
+  },
+  "ifStudent": {
+    "h1": "We need some information to apply",
+    "Name": "Name",
+    "Age": "Age",
+    "Phone": "Phone",
+    "Email": "Email",
+    "EmailPassword": "Password of Email",
+    "Country": "Country",
+    "University/School": "University/School",
+    "class/Course": "class/Course",
+    "Skills": "Skills",
+    "button": "Apply"
+  },
+  "ifOther": {
+    "h1": "We need some information to apply",
+    "Name": "Name",
+    "Age": "Age",
+    "Phone": "Phone",
+    "Email": "Email",
+    "EmailPassword": "Password of Email",
+    "Country": "Country",
+    "Question": "Why do u wanna help us?",
+    "Skills": "Skills",
+    "button": "Apply"
+  },
+  "footer": {
+    "sectionName": "Contact Us",
+    "form": {
+      "email": "Email",
+      "name": "Name",
+      "phone": "Phone",
+      "message": "Message",
+      "checkbox": "I accept the Terms of Services",
+      "button": "SUBMIT",
+      "emailPlaceholder": "Enter Your Email",
+      "namePlaceholder": "Enter Your name",
+      "phonePlaceholder": "Enter Your phone"
+    }
+  }
+}
