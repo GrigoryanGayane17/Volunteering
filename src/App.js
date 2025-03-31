@@ -11,7 +11,7 @@ import IfOther from "./components/IfOther";
 function App(props) {
     return (
         <div>
-            <BrowserRouter>
+            <BrowserRouter basename={'/Volunteering'}>
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/team'} element={<OurTeam/>}/>

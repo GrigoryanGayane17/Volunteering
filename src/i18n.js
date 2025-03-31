@@ -12,7 +12,7 @@ i18n.use(Backend) // Use the HTTP backend to load translations
             escapeValue: false, // React already escapes values
         },
         backend: {
-            loadPath: '/locales/{{lng}}/translation.json' // Path to your JSON files (relative to public folder)
+            loadPath: '/Volunteering/locales/{{lng}}/{{ns}}.json',
         },
     });
 
