@@ -5,11 +5,15 @@ body {
     user-select: none;
 }
 
-.footer-body{
-    background: rgb(31,37,68);
-    background: linear-gradient(0deg, rgba(31,37,68,1) 0%, rgba(255,255,255,1) 100%);
+.footer-body {
+    background: rgb(31, 37, 68);
+    background: linear-gradient(0deg, rgba(31, 37, 68, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
+.footer-icons{
+    width: 48px;
+    height: 48px;
+}
 
 .footer-inputs-div1 {
     display: flex;
@@ -59,10 +63,20 @@ input, textarea {
     transition: .3s;
 }
 
-.footer-numbers {
-    font-size: 60px;
+.footer-numbers a {
+    font-size: 40px;
     font-weight: 800;
-    text-align: center;
+    text-decoration: none;
+    color: #1f2544;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: .3s;
+}
+
+.footer-numbers a:hover {
+    color: #3a467c;
+    transition: .3s;
 }
 
 .footer-icon {
@@ -76,14 +90,19 @@ input, textarea {
     margin-bottom: 20px;
     text-align: center
 }
-.textArea{
+
+.textArea {
     height: 135px;
 }
 
 @media (max-width: 768px) {
-    .footer-numbers {
-        font-size: 30px;
+    .footer-numbers a {
+        font-size: 25px;
         font-weight: 500;
+    }
+    .footer-icons{
+        width: 30px;
+        height: 30px;
     }
 
     .footer-icon {
@@ -102,10 +121,11 @@ input, textarea {
         gap: 10px;
     }
 
-    .footer-inputs-div1 input,.footer-input2 {
+    .footer-inputs-div1 input, .footer-input2 {
         font-size: 16px;
     }
-    .textArea{
+
+    .textArea {
         height: 55px;
     }
 }
@@ -121,6 +141,11 @@ input, textarea {
         height: 76px
     }
 
+    .footer-icons{
+        width: 30px;
+        height: 30px;
+    }
+
     .footer-contact-us {
         font-size: 30px;
         font-weight: 800;
@@ -132,10 +157,11 @@ input, textarea {
         gap: 10px;
     }
 
-    .footer-inputs-div1 input,.footer-input2 {
+    .footer-inputs-div1 input, .footer-input2 {
         font-size: 16px;
     }
-    .textArea{
+
+    .textArea {
         height: 55px;
     }
 }
@@ -151,6 +177,10 @@ input, textarea {
         width: 76px;
         height: 76px
     }
+    .footer-icons{
+        width: 48px;
+        height: 48px;
+    }
 
     .footer-contact-us {
         font-size: 30px;
@@ -163,10 +193,11 @@ input, textarea {
         gap: 10px;
     }
 
-    .footer-inputs-div1 input,.footer-input2 {
+    .footer-inputs-div1 input, .footer-input2 {
         font-size: 16px;
     }
-    .textArea{
+
+    .textArea {
         height: 55px;
     }
 }

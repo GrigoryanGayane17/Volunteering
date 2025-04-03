@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.centerChild {
+    @apply flex justify-center items-center;
+}
+
+.activeDesc {
+    @apply opacity-100 visible;
+}
+
+.activeImage {
+    @apply opacity-100 z-[1];
+}
+.inactiveImage {
+    @apply opacity-50 z-[-1];
+}
+
+.inactiveDesc {
+    @apply opacity-0 invisible;
+}

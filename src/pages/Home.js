@@ -1,20 +1,23 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {useTranslation} from "react-i18next";
 import Slider from 'react-slick'
+import Slide from "../components/Slide";
 
 
 function Home(props) {
     const [wordInfo1, setWordInfo1] = useState('sensitive')
     const [wordInfo2, setWordInfo2] = useState('info1')
     const {t, i18n} = useTranslation();
+    const [showButton, setShowButton] = useState(false);
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng); // Switch to the selected language
     };
 
+
     let settings1 = {
-        dots:false,
+        dots: false,
         arrows: false,
         autoplay: false,
         autoplaySpeed: 2000,
@@ -26,7 +29,7 @@ function Home(props) {
         initialSlide: 0,
         responsive: [{
             breakpoint: 1230, settings: {
-                slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
+                slidesToShow: 2, slidesToScroll: 1, infinite: true, dots: false
             }
         }, {
             breakpoint: 980, settings: {
@@ -39,30 +42,6 @@ function Home(props) {
         }]
     };
 
-
-    const settings2 = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
-        responsive: [{
-            breakpoint: 1230, settings: {
-                slidesToShow: 3, slidesToScroll: 1, infinite: true, dots: true
-            }
-        }, {
-            breakpoint: 980, settings: {
-                slidesToShow: 2, slidesToScroll: 1, initialSlide: 2
-            }
-        }, {
-            breakpoint: 770, settings: {
-                slidesToShow: 1, slidesToScroll: 1
-            }
-        }]
-    };
 
     const ChangeInfo1 = (key) => {
         setWordInfo1(key)
@@ -70,6 +49,23 @@ function Home(props) {
 
     const ChangeInfo2 = (key) => {
         setWordInfo2(key)
+    }
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+    })
+
+    const scrollBack = () => {
+        window.scrollTo({top: 0, behavior: "smooth"});
     }
 
 
@@ -86,7 +82,8 @@ function Home(props) {
                         zIndex: '300'
                     }} className={'col-lg-5 col-md-12 col-sm-12 p-4'}>
                         <div>
-                            <h1 style={{fontWeight: '800', color: '#1f2645'
+                            <h1 style={{
+                                fontWeight: '800', color: '#1f2645'
                             }}>{t('home.section1.sectionName')}</h1>
                             <p style={{fontSize: "18px", marginTop: '25px'}}>
                                 {t('home.section1.mainText')}</p>
@@ -212,7 +209,7 @@ function Home(props) {
                 </div>
 
                 <div className={'row'}>
-                    <div style={{padding: '30px 15px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
+                    <div  className={'col-lg-6 col-md-12 col-sm-12 custom-padding'}>
                         <h3 style={{
                             color: 'white', fontSize: '35px', fontWeight: '800', marginBottom: '15px'
                         }}>{t(`home.section3.${wordInfo1}.sectionName`)}</h3>
@@ -226,7 +223,7 @@ function Home(props) {
                             }}>✔ {t(`home.section3.${wordInfo1}.correct_texts_col1.text_2`)}</p>
                         </div>
                     </div>
-                    <div style={{padding: '50px 50px'}} className={'col-lg-6 col-md-12 col-sm-12'}>
+                    <div style={{padding: '50px 50px'}} className={'col-lg-6 col-md-12 col-sm-12 custom-padding'}>
                         <h2 className={'home-section2-big-text'}>{t(`home.section3.${wordInfo1}.text_col_2`)}</h2>
                     </div>
                 </div>
@@ -267,54 +264,38 @@ function Home(props) {
                          className={'col-12'}>
                         <div className={'section7'}>
                             <div>
-                                <h1 style={{fontWeight: '700', fontSize: '40px',textAlign:'center'}}>{t('home.section7.sectionName')}</h1>
+                                <h1 style={{
+                                    fontWeight: '700',
+                                    fontSize: '40px',
+                                    textAlign: 'center'
+                                }}>{t('home.section7.sectionName')}</h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/*<div className={'container'}>*/}
-            {/*    <div className={'row'}>*/}
-            {/*        <div style={{display: 'flex', justifyContent: 'center'}} className={'col-12'}>*/}
-            {/*            <div className="slider-container2">*/}
-            {/*                <div className={'content'}>*/}
-            {/*                    <span*/}
-            {/*                        style={{'--i': 2, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
-            {/*                        style={{width: '150px', height: '80px', margin: '15px'}}*/}
-            {/*                        src={'https://loodibee.com/wp-content/uploads/iPhone-logo.png'}/></span>*/}
-            {/*                    <span*/}
-            {/*                        style={{'--i': 3, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
-            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
-            {/*                        src={'https://img.logodad.com/upload/J/zv8/Temu-Wordmark-icon.png'}/></span>*/}
-            {/*                    <span*/}
-            {/*                        style={{'--i': 4, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
-            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
-            {/*                        src={'https://upload.wikimedia.org/wikipedia/commons/e/e5/Cocacola_caffeinefree_logo.png'}/></span>*/}
-            {/*                    <span*/}
-            {/*                        style={{'--i': 5, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
-            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
-            {/*                        src={'https://1000logos.net/wp-content/uploads/2020/08/Shazam-Logo.png'}/></span>*/}
-            {/*                    <span*/}
-            {/*                        style={{'--i': 6, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
-            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
-            {/*                        src={'https://logos-world.net/wp-content/uploads/2023/02/Picsart-Logo.png'}/></span>*/}
-            {/*                    <span*/}
-            {/*                        style={{'--i': 7, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
-            {/*                        style={{width: '200px', height: '80px', margin: '15px'}}*/}
-            {/*                        src={'https://1000logos.net/wp-content/uploads/2017/05/Yahoo-Logo-2013.png'}/></span>*/}
-
-            {/*                    <span*/}
-            {/*                        style={{'--i': 8, display: 'flex', justifyContent: 'center', alignItems: 'center'}}><img*/}
-            {/*                        style={{width: '150px', height: '80px', margin: '15px'}}*/}
-            {/*                        src={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mercedes-Benz_logo.svg/2560px-Mercedes-Benz_logo.svg.png'}/></span>*/}
-
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<Footer/>*/}
+            <Slide/>
+            <Footer/>
+            {showButton && (
+                <button onClick={() => scrollBack()}
+                        style={{
+                            position: "fixed",
+                            bottom: "20px",
+                            right: "20px",
+                            padding: "10px",
+                            backgroundColor: "#1f2544",
+                            color: "white",
+                            border: '2px solid #f2f2f2',
+                            borderRadius: '10px'
+                        }}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                         fill="#f2f2f2">
+                        <path
+                            d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/>
+                    </svg>
+                </button>
+            )}
         </div>
 
     );

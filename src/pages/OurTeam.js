@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from "../components/Header";
 import '../assets/css/ourTeam.css'
-import usersJson from '../assets/JSONS/English/users.Eng.json'
 import Footer from "../components/Footer";
 import {useTranslation} from "react-i18next";
 
@@ -13,6 +12,8 @@ function OurTeam(props) {
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng); // Switch to the selected language
     };
+    const usersJson = t("team.section4", {returnObjects: true}) || [];
+
     return (<div>
         <Header/>
 
@@ -36,7 +37,11 @@ function OurTeam(props) {
         <div className={'container'}>
             <div style={{padding: '100px 0 0 0 '}} className={'row'}>
                 <div style={{padding: '50px 0 0 0'}} className={'col-12'}>
-                    <h1 style={{fontSize: '50px', fontWeight: '800', textAlign: 'center'}}>{t('team.section2.sectionName')}</h1>
+                    <h1 style={{
+                        fontSize: '50px',
+                        fontWeight: '800',
+                        textAlign: 'center'
+                    }}>{t('team.section2.sectionName')}</h1>
                 </div>
             </div>
         </div>
@@ -48,28 +53,44 @@ function OurTeam(props) {
                         backgroundColor: '#1f2645'
                     }} className={'team-section2-div'}>
                         <h3 style={{fontWeight: '700', color: 'white'}}>{t('team.section2.divs.div1.divName')}</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'white'}}>{t('team.section2.divs.div1.divText')}</p>
+                        <p style={{
+                            fontSize: '20px',
+                            lineHeight: '40px',
+                            color: 'white'
+                        }}>{t('team.section2.divs.div1.divText')}</p>
                     </div>
 
                     <div style={{
                         backgroundColor: '#D1E5F6FF'
                     }} className={'team-section2-div'}>
                         <h3 style={{fontWeight: '700', color: 'black'}}>{t('team.section2.divs.div2.divName')}</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>{t('team.section2.divs.div2.divText')}</p>
+                        <p style={{
+                            fontSize: '20px',
+                            lineHeight: '40px',
+                            color: 'black'
+                        }}>{t('team.section2.divs.div2.divText')}</p>
                     </div>
 
                     <div style={{
                         backgroundColor: '#1f2645'
                     }} className={'team-section2-div'}>
                         <h3 style={{fontWeight: '700', color: 'white'}}>{t('team.section2.divs.div3.divName')}</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'white'}}>{t('team.section2.divs.div3.divText')}</p>
+                        <p style={{
+                            fontSize: '20px',
+                            lineHeight: '40px',
+                            color: 'white'
+                        }}>{t('team.section2.divs.div3.divText')}</p>
                     </div>
 
                     <div style={{
                         backgroundColor: '#D1E5F6FF'
                     }} className={'team-section2-div'}>
                         <h3 style={{fontWeight: '700', color: 'black'}}>{t('team.section2.divs.div4.divName')}</h3>
-                        <p style={{fontSize: '20px', lineHeight: '40px', color: 'black'}}>{t('team.section2.divs.div4.divText')}</p>
+                        <p style={{
+                            fontSize: '20px',
+                            lineHeight: '40px',
+                            color: 'black'
+                        }}>{t('team.section2.divs.div4.divText')}</p>
                     </div>
                 </div>
             </div>
@@ -77,8 +98,12 @@ function OurTeam(props) {
 
         <div className={'container'}>
             <div className={'row'}>
-                <div style={{padding:'0 20px 80px 20px'}} className={'col-12'}>
-                    <h1 style={{fontSize: '30px', fontWeight: '800', textAlign: 'center'}}>{t('team.section3.sectionName')}</h1>
+                <div style={{padding: '0 20px 80px 20px'}} className={'col-12'}>
+                    <h1 style={{
+                        fontSize: '30px',
+                        fontWeight: '800',
+                        textAlign: 'center'
+                    }}>{t('team.section3.sectionName')}</h1>
                 </div>
             </div>
         </div>
@@ -107,8 +132,20 @@ function OurTeam(props) {
                                         objectFit: 'cover'
                                     }} src={item.image}/>
                                 </div>
-                                <h4 style={{textAlign: 'center', fontWeight: '800', marginTop: '20px'}}>{item.name}</h4>
-                                <p style={{textAlign: 'center', marginTop: '20px', fontSize: '20px'}}>{item.skill}</p>
+                                <div style={{display: 'flex', justifyContent: 'center'}}>
+                                    <div style={{width: '200px'}}>
+                                        <h4 style={{
+                                            textAlign: 'center',
+                                            fontWeight: '800',
+                                            marginTop: '20px'
+                                        }}>{item.name}</h4>
+                                        <p style={{
+                                            textAlign: 'center',
+                                            marginTop: '20px',
+                                            fontSize: '20px'
+                                        }}>{item.skill}</p>
+                                    </div>
+                                </div>
                                 <div style={{display: 'flex', justifyContent: 'center'}}>
                                     <img style={{width: '19px', height: '19px', cursor: 'pointer', margin: '10px'}}
                                          src={'https://cdn-icons-png.freepik.com/512/1077/1077092.png?uid=R179250677&ga=GA1.1.836210414.1706299071'}/>

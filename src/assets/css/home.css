@@ -4,6 +4,9 @@ body {
     box-sizing: border-box;
     user-select: none;
 }
+.custom-padding{
+    padding: 30px 100px;
+}
 
 /*header styles*/
 .menu-res {
@@ -523,6 +526,9 @@ body {
 @media (min-width: 320px) and (max-width: 768px) {
     .home-section2-h1 {
         font-size: 40px;
+    }
+    .custom-padding{
+        padding: 30px;
     }
 
     .home-section2-big-text {

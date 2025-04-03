@@ -35,7 +35,7 @@ const OurProject = () => {
         <div>
             <Header/>
             <Container className="py-5">
-                <h1 className="projects-big-text text-center">Our Opportunities</h1>
+                <h1 className="projects-big-text text-center">{t(`volunteeringH1`)}</h1>
                 <Row className="g-4">
                     {volunteeringProjects.map((item, index) => (
                         <Col key={index} md={6} lg={4}>

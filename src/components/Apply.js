@@ -10,7 +10,8 @@ const Apply = () => {
     const [selectedOption, setSelectedOption] = useState("");
     const navigate = useNavigate();
 
-    const handleButtonClick = () => {
+    const handleButtonClick = (ev) => {
+        ev.preventDefault()
         if (selectedOption) {
             navigate(`/${selectedOption}`);
         } else {
@@ -23,9 +24,9 @@ const Apply = () => {
             <Card className="shadow p-4" style={{ maxWidth: "500px", width: "100%" }}>
 
                 <button
-                    style={{border:'none',background:'transparent'}}
+                    style={{border:'none',background:'transparent',display:'flex',justifyContent:'end'}}
                     variant="primary"
-                    className="position-absolute top-0 end-0 m-0 fs-1 :hover-border-gray-200"
+                    className=" fs-1 :hover-border-gray-200"
                     onClick={() => navigate('/project')}
                 >
                     &times;

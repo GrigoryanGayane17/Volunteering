@@ -16,14 +16,20 @@ function Header(props) {
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
+    const header = {
+        "en": "https://cdn-icons-png.freepik.com/512/13481/13481822.png?uid=R179250677&ga=GA1.1.836210414.1706299071",
+        "ru": "https://cdn-icons-png.freepik.com/512/16150/16150266.png?uid=R179250677&ga=GA1.1.836210414.1706299071",
+        "am": "https://cdn-icons-png.freepik.com/512/299/299840.png?uid=R179250677&ga=GA1.1.836210414.1706299071"
+    }
 
 
     return (
         <div className={'container-fluid'}>
             <div className={'row'}>
-                <div className={'col-12 pe-lg-5 ps-lg-5 pe-md-3 ps-md-3 pe-sm-3 ps-sm-3 d-flex justify-content-between align-items-center'}>
+                <div
+                    className={'col-12 pe-lg-5 ps-lg-5 pe-md-3 ps-md-3 pe-sm-3 ps-sm-3 d-flex justify-content-between align-items-center'}>
                     <div>
-                        <img onClick={()=>navigate('/')} className={'menu-logo'}
+                        <img onClick={() => navigate('/')} className={'menu-logo'}
                              src={logo}/>
                     </div>
                     <div onClick={handleMenu}>
@@ -47,27 +53,30 @@ function Header(props) {
                     <div className={'menu'}>
                         <div>
                             <div style={{marginRight: '30px'}}>
-                                <button className={'header-translation-btn'} onClick={() => changeLanguage('en')}>EN
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('en')}>
+                                    <img style={{width:'30px',height:'30px'}} src={header.en}/>
                                 </button>
-                                <button className={'header-translation-btn'} onClick={() => changeLanguage('ru')}>RU
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('ru')}>
+                                    <img style={{width:'30px',height:'30px'}} src={header.ru}/>
                                 </button>
-                                <button className={'header-translation-btn'} onClick={() => changeLanguage('am')}>AM
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('am')}>
+                                    <img style={{width:'30px',height:'30px'}} src={header.am}/>
                                 </button>
                             </div>
 
                             <Link className={'links'} to={'/'}>
                                 <div className={'links-div'}>
-                                    Home
+                                    {t('header.home')}
                                 </div>
                             </Link>
                             <Link className={'links'} to={'/team'}>
                                 <div className={'links-div'}>
-                                    Our Team
+                                    {t('header.ourTeam')}
                                 </div>
                             </Link>
                             <Link className={'links'} to={'/project'}>
                                 <div className={'links-div'}>
-                                    Our Projects
+                                    {t('header.ourProjects')}
                                 </div>
                             </Link>
                         </div>

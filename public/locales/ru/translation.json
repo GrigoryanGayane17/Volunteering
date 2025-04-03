@@ -1,4 +1,9 @@
 {
+  "header": {
+    "home": "Главная",
+    "ourTeam": "Наша команда",
+    "ourProjects": "Проекты"
+  },
   "home": {
     "section1": {
       "sectionName": "Добро пожаловать в нашу семью волонтёров!",
@@ -122,7 +127,34 @@
     },
     "section3": {
       "sectionName": "Наша профессиональная команда терапевтов"
-    }
+    },
+    "section4": [
+      {
+        "id": 1,
+        "name": "Джеффри Браун",
+        "skill": "Клинический директор",
+        "image": "https://images03.nicepagecdn.com/c461c07a441a5d220e8feb1a/11824bb9791250b9b0281f98/2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Уолтер Лилли",
+        "skill": "Директор по развитию персонала",
+        "image": "https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/ebe810d3c12f5550b0cf6ac7/3.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Анна Ричмонд",
+        "skill": "Клинический супервайзер",
+        "image": "https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/6d9f8735a63c598ba23f0ec0/0b32e1fa-df03-3333-0282-3c4069b3e47d.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Дженни Робертс",
+        "skill": "MSW, LICSW, LADC",
+        "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/a466b6eee7555ed99a9adf60/bbef6c67-d065-15d8-00f7-04c4574b8bd9.jpg"
+      }
+    ]
+
   },
   "apply": {
     "h1": "Я...",
@@ -172,8 +204,7 @@
     "Skills": "Навыки",
     "button": "Подать заявку"
   },
-
-
+  "volunteeringH1": "Наши возможности",
   "volunteering_projects": [
     {
       "id": "community_cleanup_initiative",
@@ -264,6 +295,34 @@
       "button2": "Дать заявку !"
     }
   ],
+  "weWorkWith": [
+    {
+      "id": 1,
+      "href": "https://e0.pxfuel.com/wallpapers/65/759/desktop-wallpaper-adidas-black-adidas-black-and-white.jpg",
+      "desc": "Глобальный бренд спортивной одежды, известный своей инновационной спортивной обувью, одеждой и аксессуарами. Adidas сочетает в себе производительность и стиль, что делает его фаворитом среди спортсменов и любителей моды."
+    },
+    {
+      "id": 2,
+      "href": "https://wallpapers.com/images/hd/nike-logo-grungy-texture-wallpaper-pfrggrfy5gauzlen.jpg",
+      "desc": "Один из ведущих мировых спортивных брендов, известный своей передовой спортивной экипировкой, обувью и одеждой. Слоган Nike “Just Do It” и логотип Swoosh символизируют мотивацию и совершенство."
+    },
+    {
+      "id": 3,
+      "href": "https://i.pinimg.com/736x/76/84/46/7684461e3ed430198366d7580d550340.jpg",
+      "desc": "Международная компания по производству электроники, специализирующаяся на компьютерах, ноутбуках и игровых устройствах. Acer известен производством надежной и доступной технологии как для обычных пользователей, так и для профессионалов."
+    },
+    {
+      "id": 4,
+      "href": "https://www.pixelstalk.net/wp-content/uploads/images2/Gucci-Logo-Desktop-Background-Wallpaper.jpg",
+      "desc": "Легендарный итальянский бренд люксовой моды, известный своей эксклюзивной одеждой, сумками и аксессуарами. Gucci ассоциируется с элегантностью, смелыми дизайнами и первоклассным мастерством."
+    },
+    {
+      "id": 5,
+      "href": "https://wallpapercave.com/wp/wp10714446.jpg",
+      "desc": "Престижный французский модный дом, специализирующийся на роскошных кожаных изделиях, одежде и аксессуарах. Благодаря монограмме LV бренд олицетворяет изысканность и эксклюзивность."
+    }
+  ],
+
 
 
   "footer": {
