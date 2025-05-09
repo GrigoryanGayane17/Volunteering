@@ -1,19 +1,39 @@
 import React, {useEffect, useState} from "react";
 import {useTranslation} from "react-i18next";
-import Slider from "react-slick";
 import {Link} from "react-router-dom";
-import {Modal, Button, Container, Row, Col, Card, ListGroup} from "react-bootstrap";
+import {Modal, Container, Row, Col, Card, ListGroup} from "react-bootstrap";
 import Header from "../components/Header";
 import '../assets/css/projects.css'
+import Footer from "../components/Footer";
+import {BsChevronCompactLeft, BsChevronCompactRight} from "react-icons/bs";
 
 
 const OurProject = () => {
     const {t} = useTranslation();
     const [moreInfo, setMoreInfo] = useState(false);
     const [ind, setIndex] = useState(0);
-    const volunteeringProjects = t("volunteering_projects", { returnObjects: true }) || [];
-    console.log(volunteeringProjects)
+    const [text, setText] = useState('')
+    const [showButton, setShowButton] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0)
 
+    const volunteeringProjects = t("volunteering_projects", {returnObjects: true}) || [];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+    })
+
+
+    const scrollBack = () => {
+        window.scrollTo({top: 0, behavior: "smooth"});
+    }
 
     const handleMoreInfo = (i) => {
         setMoreInfo(true);
@@ -21,21 +41,17 @@ const OurProject = () => {
     };
 
     const handleClose = () => setMoreInfo(false);
-    let settings = {
-        arrows: false,
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        pauseOnHover: true
-    };
+
+    const prevSlide = () => {
+        const isFirstSlide = currentIndex === 0;
+        const newIndex = isFirstSlide ? volunteeringProjects[ind]?.length - 1 : currentIndex - 1
+        setCurrentIndex(newIndex)
+    }
     return (
         <div>
             <Header/>
             <Container className="py-5">
-                <h1 className="projects-big-text text-center">{t(`volunteeringH1`)}</h1>
+                <h1 data-aos="fade-up" className="projects-big-text text-center">{t(`volunteeringH1`)}</h1>
                 <Row className="g-4">
                     {volunteeringProjects.map((item, index) => (
                         <Col key={index} md={6} lg={4}>
@@ -44,7 +60,25 @@ const OurProject = () => {
                                           src={item.main_image}/>
                                 <Card.Body>
                                     <Card.Title>{item.title}</Card.Title>
-                                    <Card.Text>{item.main_description}</Card.Text>
+                                    <Card.Text>
+                                        {(() => {
+                                            const desc = item.main_description;
+                                            if (desc.length > 130) {
+                                                const trimmed = desc.slice(0, desc.slice(0, 131).lastIndexOf(" "));
+                                                return (
+                                                    <>
+                                                        {trimmed}
+                                                        <span onClick={() => handleMoreInfo(index)} style={{
+                                                            color: "gray",
+                                                            cursor: "pointer"
+                                                        }}>...Read More</span>
+                                                    </>
+                                                );
+                                            } else {
+                                                return desc;
+                                            }
+                                        })()}
+                                    </Card.Text>
                                     <button className={'apply-button'} onClick={() => handleMoreInfo(index)}>
                                         {t(`volunteering_projects.${index}.button1`)}
                                     </button>
@@ -63,17 +97,24 @@ const OurProject = () => {
                     <Modal.Title>{volunteeringProjects[ind]?.title}</Modal.Title>
                 </Modal.Header>
                     <Modal.Body>
-                        <div className={'slider-container2'}>
+                        <div className={'w-full relative group'}>
+                            <div onClick={()=>prevSlide(ind)}
+                                className={'hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'}>
+                                <BsChevronCompactLeft size={30}/>
+                            </div>
+                            <div
+                                className={'hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'}>
+                                <BsChevronCompactRight size={30}/>
+                            </div>
+                            <div>
+                                <div
+                                    style={{backgroundImage: `url(${volunteeringProjects[ind]?.images[currentIndex].link})`}}
+                                    className={'w-full h-[300px] rounded-2xl bg-center bg-cover duration-500'}
+                                    key={ind}>
+                                </div>
 
-                            <Slider style={{width: "100%", maxWidth: "800px", margin: "0 auto"}} {...settings}>
-                                {volunteeringProjects[ind]?.images.map((image, i) => (
-                                    <div key={i}
-                                         style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-                                        <img src={image} className="project-images" alt={`Project ${i}`}
-                                             style={{maxWidth: "100%", height: "auto", borderRadius: "10px"}}/>
-                                    </div>
-                                ))}
-                            </Slider>
+                            </div>
+
 
                         </div>
                         <h4 className="mt-3">Location: {volunteeringProjects[ind]?.location}</h4>
@@ -97,7 +138,29 @@ const OurProject = () => {
                         </Link>
                     </Modal.Footer>
                 </Modal>
+
+                {showButton && (
+                    <button onClick={() => scrollBack()}
+                            style={{
+                                position: "fixed",
+                                bottom: "20px",
+                                right: "20px",
+                                padding: "10px",
+                                backgroundColor: "#1f2544",
+                                color: "white",
+                                border: '2px solid #f2f2f2',
+                                borderRadius: '10px'
+                            }}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                             fill="#f2f2f2">
+                            <path
+                                d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/>
+                        </svg>
+                    </button>
+                )}
             </Container>
+            <Footer/>
         </div>
 
     );

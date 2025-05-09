@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { Container, Card, Form, Button, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Countries from "./Countries";
 
 const IfStudent = () => {
     const { t } = useTranslation();
@@ -22,15 +23,15 @@ const IfStudent = () => {
 
     const [errors, setErrors] = useState({});
 
-    const nameRegex = /^[A-Za-z\s]+$/;
-    const ageRegex = /^(1[89]|[2-9][0-9]|1[0-1][0-9]|120)$/;
-    const phoneRegex = /^\+?[1-9]\d{1,14}$/;
+    const nameRegex = /^[\p{L}\s]+$/u;
+    const ageRegex = /^(1[89]|[2-9][0-9]|1[0-1][0-9]|120)$/; // age 18–120
+    const phoneRegex = /^\+?[1-9]\d{1,14}$/; // E.164 phone number format
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    const countryRegex = /^[A-Za-z\s]+$/;
-    const universityRegex = /^[A-Za-z0-9\s]+$/;
-    const classCourseRegex = /^[A-Za-z\s]+$/;
-    const skillsRegex = /^[A-Za-z0-9\s,]+$/;
+    const countryRegex = /^[\p{L}\s]+$/u;
+    const universityRegex = /^[\p{L}\d\s]+$/u;
+    const classCourseRegex = /^[\p{L}\s]+$/u;
+    const skillsRegex = /^[\p{L}\d\s,]+$/u;
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -161,31 +162,14 @@ const IfStudent = () => {
                         </Row>
                         <Row className="mb-3">
                             <Col md={6}>
-                                <Form.Group>
-                                    <Form.Control
-                                        type="password"
-                                        name="password"
-                                        value={formData.password}
-                                        onChange={handleChange}
-                                        placeholder={t("ifStudent.Password")}
-                                    />
-                                    {errors.password && <div className="text-danger">{errors.password}</div>}
-                                </Form.Group>
+                                <Countries
+                                    className="form-control"
+                                    value={formData.country}
+                                    onChange={handleChange}
+                                />
+                                {errors.country && <small className="text-danger">{errors.country}</small>}
                             </Col>
-                            <Col md={6}>
-                                <Form.Group>
-                                    <Form.Control
-                                        type="text"
-                                        name="country"
-                                        value={formData.country}
-                                        onChange={handleChange}
-                                        placeholder={t("ifStudent.Country")}
-                                    />
-                                    {errors.country && <div className="text-danger">{errors.country}</div>}
-                                </Form.Group>
-                            </Col>
-                        </Row>
-                        <Row className="mb-3">
+
                             <Col md={6}>
                                 <Form.Group>
                                     <Form.Control
@@ -198,6 +182,8 @@ const IfStudent = () => {
                                     {errors.university && <div className="text-danger">{errors.university}</div>}
                                 </Form.Group>
                             </Col>
+                        </Row>
+                        <Row className="mb-3">
                             <Col md={6}>
                                 <Form.Group>
                                     <Form.Control
@@ -210,17 +196,19 @@ const IfStudent = () => {
                                     {errors.classCourse && <div className="text-danger">{errors.classCourse}</div>}
                                 </Form.Group>
                             </Col>
+                            <Col md={6}>
+                                <Form.Group className="mb-3">
+                                    <Form.Control
+                                        type="text"
+                                        name="skills"
+                                        value={formData.skills}
+                                        onChange={handleChange}
+                                        placeholder={t("ifStudent.Skills")}
+                                    />
+                                    {errors.skills && <div className="text-danger">{errors.skills}</div>}
+                                </Form.Group>
+                            </Col>
                         </Row>
-                        <Form.Group className="mb-3">
-                            <Form.Control
-                                type="text"
-                                name="skills"
-                                value={formData.skills}
-                                onChange={handleChange}
-                                placeholder={t("ifStudent.Skills")}
-                            />
-                            {errors.skills && <div className="text-danger">{errors.skills}</div>}
-                        </Form.Group>
                         <div className="d-grid">
 
                             <button

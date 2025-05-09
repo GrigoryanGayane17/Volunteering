@@ -4,10 +4,6 @@ body {
     box-sizing: border-box;
     user-select: none;
 }
-.custom-padding{
-    padding: 30px 100px;
-}
-
 /*header styles*/
 .menu-res {
     width: 50px;
@@ -58,11 +54,15 @@ body {
     z-index: 400;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
 .submenu {
     background-color: #323b65;
     display: flex;
     justify-content: flex-end;
     padding: 20px;
+    height: 100px;
     position: fixed;
     left: 0;
     top: 0;
@@ -113,7 +113,6 @@ body {
 
 .nucleus {
     position: absolute;
-
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background: linear-gradient(#0738e8, cyan);
@@ -257,9 +256,8 @@ body {
 }
 
 .home-section1-img {
-    width: 450px;
-    height: 489px;
-    z-index: 200;
+    width: 550px;
+    height: 509px;
     object-fit: cover;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -312,13 +310,6 @@ body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, rgba(31, 37, 68, 1) 15%);
 }
 
-.home-section2-big-text {
-    color: white;
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    line-height: 60px
-}
 
 .home-section2-h1 {
     font-weight: 800;
@@ -527,9 +518,7 @@ body {
     .home-section2-h1 {
         font-size: 40px;
     }
-    .custom-padding{
-        padding: 30px;
-    }
+
 
     .home-section2-big-text {
         font-size: 20px;
@@ -555,6 +544,8 @@ body {
 }
 
 
+
+
 @media (max-width: 768px) {
     .home-section1-absolute-div1 {
         width: 150px;
@@ -576,8 +567,9 @@ body {
     }
 
     .home-section1-img {
-        width: 270px;
-        height: 309px;
+        width:95%;
+        height: 500px;
+        z-index: 0;
     }
 
     .home-section2-h1{

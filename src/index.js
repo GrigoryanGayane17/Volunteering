@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react';
+import React, {Suspense, useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -6,6 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/home.css'
 import '../src/assets/css/footer.css'
 import './i18n'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Loader = () => {
     return <div style={{display:'flex',justifyContent:'center',alignItems:'center',height:'100vh',backgroundColor:'#1f2645'}}>

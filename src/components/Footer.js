@@ -80,7 +80,7 @@ function Footer(props) {
             <div className={'container'}>
                 <div className={'row'}>
                     <div style={{padding: '30px'}} className={'col-lg-6 col-md-6 col-sm-12 section8-div1'}>
-                        <h1 className={'footer-contact-us'}>{t('footer.sectionName')}</h1>
+                        <h1 data-aos="fade-up" className={'footer-contact-us'}>{t('footer.sectionName')}</h1>
                         <div style={{fontSize: '20px'}}>
                             <div className={'footer-inputs-div1'}>
                                 <div style={{width: '100%'}}>
@@ -153,11 +153,11 @@ function Footer(props) {
                     <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '50px 30px'}}
                          className={'col-lg-6 col-md-6 col-sm-12'}>
                         <div>
-                            <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <div data-aos="fade-up" style={{display: 'flex', justifyContent: 'center'}}>
                                 <img className={'footer-icon'}
                                      src={'https://cdn-icons-png.freepik.com/512/12643/12643041.png?uid=R179250677&ga=GA1.1.836210414.1706299071'}/>
                             </div>
-                            <h1 className={'footer-numbers'}>
+                            <h1 data-aos="fade-up" className={'footer-numbers'}>
                                 <a href={'tel:091992691'}>
                                     <svg className={'footer-icons'} xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 -960 960 960"
@@ -167,7 +167,7 @@ function Footer(props) {
                                     </svg>
                                     1 (234) 567-891</a>
                             </h1>
-                            <h1 className={'footer-numbers'}>
+                            <h1 data-aos="fade-up" className={'footer-numbers'}>
                                 <a href={'https://maps.app.goo.gl/hhumu2ycQwhD79bt6'}>
                                     <svg className={'footer-icons'} xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 -960 960 960"

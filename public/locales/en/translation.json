@@ -207,9 +207,15 @@
       "age_requirement": "18,18 + ",
       "main_image": "https://img.freepik.com/free-photo/people-doing-community-service-by-collecting-trash-outdoors_23-2149109153.jpg?t=st=1739208485~exp=1739212085~hmac=dda4ff8b0f53c393a29da91b131b89ddda42f62b4f490e5f56bb59d1c14fcd69&w=996",
       "images": [
-        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg?t=st=1739208579~exp=1739212179~hmac=6f08431cd96187352a74640bdffec7c3d1e20e88d2e51dbd5f96fb196bb63348&w=996",
-        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg?t=st=1739208579~exp=1739212179~hmac=6f08431cd96187352a74640bdffec7c3d1e20e88d2e51dbd5f96fb196bb63348&w=996",
-        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg?t=st=1739208579~exp=1739212179~hmac=6f08431cd96187352a74640bdffec7c3d1e20e88d2e51dbd5f96fb196bb63348&w=996"
+        {
+          "link": "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
+        }
       ],
       "button1": "More !",
       "button2": "Want to apply ?"
@@ -236,9 +242,15 @@
       "age_requirement": "21,21 +",
       "main_image": "https://img.freepik.com/free-photo/youth-vintage-vector-graphic-concept_53876-21297.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/portrait-teenage-friends-smiling_23-2149260542.jpg?t=st=1739562814~exp=1739566414~hmac=316c6e88aab88b69cf88caef3a811c5b2c0b67a18a916aa13830107239ae9891&w=740 ",
-        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg",
-        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
+        {
+          "link": "https://img.freepik.com/free-photo/portrait-teenage-friends-smiling_23-2149260542.jpg?t=st=1739562814~exp=1739566414~hmac=316c6e88aab88b69cf88caef3a811c5b2c0b67a18a916aa13830107239ae9891&w=740 "
+        },
+        {
+          "link": "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
+        }
       ],
       "button1": "More !",
       "button2": "Want to apply ?"
@@ -265,9 +277,16 @@
       "age_requirement": "16 , 16 +",
       "main_image": "https://img.freepik.com/premium-photo/professional-team-cooks-chefs-preparing-meal-busy-hotel-restaurant-kitchen_530697-27607.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg",
-        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg",
-        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        {
+          "link": "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        },
+
+        {
+          "link": "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        }
       ],
       "button1": "More !",
       "button2": "Want to apply ?"
@@ -294,10 +313,15 @@
       "age_requirement": "18 , 18 +",
       "main_image": "https://img.freepik.com/free-vector/younger-generation-taking-care-helping-elders_52683-38555.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/lifestyle-scene-from-community-showing-care-support-from-people_23-2151261188.jpg",
-        "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg",
-        "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg",
-        "https://img.freepik.com/free-photo/people-taking-community-action_23-2149232543.jpg"
+        {
+          "link": "https://img.freepik.com/free-photo/lifestyle-scene-from-community-showing-care-support-from-people_23-2151261188.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg"
+        }
       ],
       "button1": "More !",
       "button2": "Want to apply ?"
@@ -326,10 +350,15 @@
       "age_requirement": "16 , 16+",
       "main_image": "https://cdn.kassir.ru/msk/poster/3e/3eee4d874e5657c3baa32b0b243aa494.jpg",
       "images": [
-        "https://cdnlv.redkassa.ru/live/sitenew/picture/a989ab57-eae5-471b-a048-c52e99aeeaaa",
-        "https://cdn-image.zvuk.com/pic?type=release&id=11873375&size=medium&hash=d401fffc-3159-413d-9a61-356253c1e814",
-        "https://lastfm.freetls.fastly.net/i/u/ar0/34688244f92db5aaa230bf09d594503b.jpg",
-        "https://lastfm.freetls.fastly.net/i/u/ar0/34688244f92db5aaa230bf09d594503b.jpg"
+        {
+          "link": "https://cdnlv.redkassa.ru/live/sitenew/picture/a989ab57-eae5-471b-a048-c52e99aeeaaa"
+        },
+        {
+          "link": "https://cdn-image.zvuk.com/pic?type=release&id=11873375&size=medium&hash=d401fffc-3159-413d-9a61-356253c1e814"
+        },
+        {
+          "link": "https://lastfm.freetls.fastly.net/i/u/ar0/34688244f92db5aaa230bf09d594503b.jpg"
+        }
       ],
       "button1": "More !",
       "button2": "Want to apply ?"
@@ -375,7 +404,6 @@
     "Age": "Age",
     "Phone": "Phone",
     "Email": "Email",
-    "EmailPassword": "Password of Email",
     "Country": "Country",
     "WorkCompany": "Work Company",
     "Profession": "Profession",
@@ -388,7 +416,6 @@
     "Age": "Age",
     "Phone": "Phone",
     "Email": "Email",
-    "EmailPassword": "Password of Email",
     "Country": "Country",
     "University/School": "University/School",
     "class/Course": "class/Course",
@@ -401,7 +428,6 @@
     "Age": "Age",
     "Phone": "Phone",
     "Email": "Email",
-    "EmailPassword": "Password of Email",
     "Country": "Country",
     "Question": "Why do u wanna help us?",
     "Skills": "Skills",

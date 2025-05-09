@@ -70,7 +70,8 @@ input, textarea {
     color: #1f2544;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
+    margin:10px;
     transition: .3s;
 }
 

@@ -183,6 +183,35 @@ input[type="radio"]:checked::before {
 }
 
 
+.custom-slider {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* fallback background */
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slide-image:hover {
+    transform: scale(1.02);
+}
+
+
 .project-images {
     width: 100%;
     height: 250px;

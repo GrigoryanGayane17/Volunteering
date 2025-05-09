@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import {useTranslation} from "react-i18next";
 import Slider from 'react-slick'
 import Slide from "../components/Slide";
+import Countries from "../components/Countries";
 
 
 function Home(props) {
@@ -12,13 +13,15 @@ function Home(props) {
     const {t, i18n} = useTranslation();
     const [showButton, setShowButton] = useState(false);
     const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng); // Switch to the selected language
+        i18n.changeLanguage(lng);
+        localStorage.setItem('i18nextLng', lng);
+
     };
 
 
     let settings1 = {
         dots: false,
-        arrows: false,
+        arrows: true,
         autoplay: false,
         autoplaySpeed: 2000,
         cssEase: "linear",
@@ -41,6 +44,14 @@ function Home(props) {
             }
         }]
     };
+
+    const handleScroll = ()=>{
+        window.scrollBy({
+            top: 300, // scroll down 500px
+            left: 0,
+            behavior: 'smooth', // smooth scroll
+        });
+    }
 
 
     const ChangeInfo1 = (key) => {
@@ -82,10 +93,10 @@ function Home(props) {
                         zIndex: '300'
                     }} className={'col-lg-5 col-md-12 col-sm-12 p-4'}>
                         <div>
-                            <h1 style={{
+                            <h1 data-aos="fade-up" style={{
                                 fontWeight: '800', color: '#1f2645'
                             }}>{t('home.section1.sectionName')}</h1>
-                            <p style={{fontSize: "18px", marginTop: '25px'}}>
+                            <p data-aos="fade-up" style={{fontSize: "22px", marginTop: '25px'}}>
                                 {t('home.section1.mainText')}</p>
                             <button className={'home-section1-btn'}>{t('home.section1.link')}</button>
                         </div>
@@ -94,15 +105,12 @@ function Home(props) {
                     <div style={{
                         padding: '100px 50px',
                         display: 'flex',
-                        justifyContent: 'center',
+                        justifyContent:'end',
                         alignItems: 'center',
                         position: 'relative',
-                        zIndex: '200'
                     }} className={'col-lg-7 col-md-12 col-sm-12'}>
-                        <img className={'home-section1-img'}
+                        <img data-aos="zoom-in" className={'home-section1-img'}
                              src={'https://img.freepik.com/free-photo/thats-how-you-make-it-group-young-people-casual-clothes-working-modern-office_146671-16485.jpg?t=st=1738668267~exp=1738671867~hmac=7af66c15cb0b61c1ac2b8e98f15b72835c3b209ea1c5f7a01154b855039afe00&w=996'}/>
-                        <div className={'home-section1-absolute-div1'}></div>
-                        <div className={'home-section1-absolute-div2'}></div>
                     </div>
                 </div>
             </div>
@@ -110,7 +118,7 @@ function Home(props) {
             <div className={'container-fluid home-section2'}>
                 <div className={'row'}>
                     <div style={{padding: '30px'}} className={'col-12'}>
-                        <h1 className={'home-section2-h1'}>{t('home.section2.sectionName')}</h1>
+                        <h1 data-aos="fade-up" className={'home-section2-h1'}>{t('home.section2.sectionName')}</h1>
                     </div>
                 </div>
                 <div className={'row'}>
@@ -125,7 +133,7 @@ function Home(props) {
 
                         <div className="slider-container1">
                             <Slider {...settings1}>
-                                <div style={{margin: '15px'}}>
+                                <div onClick={handleScroll} style={{margin: '15px'}}>
                                     <div onFocus={() => ChangeInfo1('sensitive')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -138,7 +146,7 @@ function Home(props) {
                                         }}>{t('home.section2.square_divs.text_1')}</h4>
                                     </div>
                                 </div>
-                                <div style={{margin: '15px'}}>
+                                <div onClick={handleScroll} style={{margin: '15px'}}>
                                     <div onFocus={() => ChangeInfo1('children')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -151,7 +159,7 @@ function Home(props) {
                                         }}>{t('home.section2.square_divs.text_2')}</h4>
                                     </div>
                                 </div>
-                                <div style={{margin: '15px'}}>
+                                <div onClick={handleScroll} style={{margin: '15px'}}>
                                     <div onFocus={() => ChangeInfo1('sociable')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -164,7 +172,7 @@ function Home(props) {
                                         }}>{t('home.section2.square_divs.text_3')}</h4>
                                     </div>
                                 </div>
-                                <div style={{margin: '15px'}}>
+                                <div onClick={handleScroll} style={{margin: '15px'}}>
                                     <div onFocus={() => ChangeInfo1('teamsFamilies')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -177,7 +185,7 @@ function Home(props) {
                                         }}>{t('home.section2.square_divs.text_4')}</h4>
                                     </div>
                                 </div>
-                                <div style={{margin: '15px'}}>
+                                <div onClick={handleScroll} style={{margin: '15px'}}>
                                     <div onFocus={() => ChangeInfo1('lively')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -190,7 +198,7 @@ function Home(props) {
                                         }}>{t('home.section2.square_divs.text_5')}</h4>
                                     </div>
                                 </div>
-                                <div style={{margin: '15px'}}>
+                                <div onClick={handleScroll} style={{margin: '15px'}}>
                                     <div onFocus={() => ChangeInfo1('accountable')} tabIndex={'0'}
                                          className={'home-section2-div'}>
                                         <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -209,12 +217,19 @@ function Home(props) {
                 </div>
 
                 <div className={'row'}>
-                    <div  className={'col-lg-6 col-md-12 col-sm-12 custom-padding'}>
-                        <h3 style={{
-                            color: 'white', fontSize: '35px', fontWeight: '800', marginBottom: '15px'
-                        }}>{t(`home.section3.${wordInfo1}.sectionName`)}</h3>
-                        <p style={{color: 'white', fontSize: '20px'}}>{t(`home.section3.${wordInfo1}.under_text`)}</p>
-                        <div>
+                    <div className={'col-lg-6 col-md-12 col-sm-12 p-lg-5 p-md-3 p-sm-2'}>
+                        <div data-aos="fade-up">
+                            <h3 style={{
+                                color: 'white', fontSize: '35px', fontWeight: '800', marginBottom: '15px'
+                            }}>{t(`home.section3.${wordInfo1}.sectionName`)}</h3>
+                            <div>
+                                <p style={{color: 'white', fontSize: '20px'}}>{t(`home.section3.${wordInfo1}.under_text`)}</p>
+                                <p style={{color: 'white', fontSize: '20px'}}>{t(`home.section3.${wordInfo1}.text_col_2`)}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={'col-lg-6 col-md-12 col-sm-12 p-lg-5 p-md-3 p-sm-2'} >
+                        <div data-aos="fade-up">
                             <p style={{
                                 color: 'white', fontSize: '25px'
                             }}>✔ {t(`home.section3.${wordInfo1}.correct_texts_col1.text_1`)}</p>
@@ -222,9 +237,6 @@ function Home(props) {
                                 color: 'white', fontSize: '25px'
                             }}>✔ {t(`home.section3.${wordInfo1}.correct_texts_col1.text_2`)}</p>
                         </div>
-                    </div>
-                    <div style={{padding: '50px 50px'}} className={'col-lg-6 col-md-12 col-sm-12 custom-padding'}>
-                        <h2 className={'home-section2-big-text'}>{t(`home.section3.${wordInfo1}.text_col_2`)}</h2>
                     </div>
                 </div>
             </div>
@@ -238,10 +250,10 @@ function Home(props) {
                         padding: '0 0 100px 0',
                         position: 'relative'
                     }} className={'col-12'}>
-                        <img className={'home-section3-img'}
+                        <img data-aos="fade-down" className={'home-section3-img'}
                              src={'https://assets.nicepagecdn.com/d2cc3eaa/308685/images/Untitled-1e.jpg'}/>
-                        <div className={'home-section3-absolute-div1'}></div>
-                        <div className={'home-section3-absolute-div2'}>
+                        <div data-aos="fade-up" className={'home-section3-absolute-div1'}></div>
+                        <div data-aos="fade-up" className={'home-section3-absolute-div2'}>
                             <div>
                                 <h1 style={{fontSize: '40px', fontWeight: '700'}}>{t('home.section4.sectionName')}</h1>
                                 <p style={{fontSize: '20px'}}>
@@ -264,7 +276,7 @@ function Home(props) {
                          className={'col-12'}>
                         <div className={'section7'}>
                             <div>
-                                <h1 style={{
+                                <h1 data-aos="fade-up" style={{
                                     fontWeight: '700',
                                     fontSize: '40px',
                                     textAlign: 'center'
@@ -296,6 +308,8 @@ function Home(props) {
                     </svg>
                 </button>
             )}
+
+            <Countries/>
         </div>
 
     );

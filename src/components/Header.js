@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import logo from '../assets/images/freepik__background__92321.png'
@@ -22,6 +22,14 @@ function Header(props) {
         "am": "https://cdn-icons-png.freepik.com/512/299/299840.png?uid=R179250677&ga=GA1.1.836210414.1706299071"
     }
 
+    useEffect(() => {
+        if (menu) {
+            document.body.classList.add("no-scroll");
+        } else {
+            document.body.classList.remove("no-scroll");
+        }
+    }, [menu]);
+
 
     return (
         <div className={'container-fluid'}>
@@ -39,29 +47,47 @@ function Header(props) {
             </div>
 
             {menu ?
-                <div>
+                <div  onClick={()=>setMenu(false)}>
                     <div className={'submenu'}>
-                        <svg style={{cursor: 'pointer'}} onClick={handleMenu} xmlns="http://www.w3.org/2000/svg"
-                             height="48px"
-                             viewBox="0 -960 960 960"
-                             width="48px" fill="#FFFFFF">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                        </svg>
+                        <div className={'block max-[510px]:hidden'}>
+                            <div style={{marginRight: '30px'}}>
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('en')}>
+                                    <img style={{width: '20px', height: '20px'}} src={header.en}/>
+                                </button>
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('ru')}>
+                                    <img style={{width: '20px', height: '20px'}} src={header.ru}/>
+                                </button>
+                                <button className={'header-translation-btn'} onClick={() => changeLanguage('am')}>
+                                    <img style={{width: '20px', height: '20px'}} src={header.am}/>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <div className={'menu'}>
                         <div>
-                            <div style={{marginRight: '30px'}}>
-                                <button className={'header-translation-btn'} onClick={() => changeLanguage('en')}>
-                                    <img style={{width:'30px',height:'30px'}} src={header.en}/>
-                                </button>
-                                <button className={'header-translation-btn'} onClick={() => changeLanguage('ru')}>
-                                    <img style={{width:'30px',height:'30px'}} src={header.ru}/>
-                                </button>
-                                <button className={'header-translation-btn'} onClick={() => changeLanguage('am')}>
-                                    <img style={{width:'30px',height:'30px'}} src={header.am}/>
-                                </button>
+                            <div className={'d-flex justify-end'}>
+                                <svg style={{cursor: 'pointer'}} onClick={handleMenu} xmlns="http://www.w3.org/2000/svg"
+                                     height="48px"
+                                     viewBox="0 -960 960 960"
+                                     width="48px" fill="#FFFFFF">
+                                    <path
+                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                                </svg>
+                            </div>
+
+                            <div className={"block min-[511px]:hidden"}>
+                                <div style={{marginRight: '30px'}}>
+                                    <button className={'header-translation-btn'} onClick={() => changeLanguage('en')}>
+                                        <img style={{width: '20px', height: '20px'}} src={header.en}/>
+                                    </button>
+                                    <button className={'header-translation-btn'} onClick={() => changeLanguage('ru')}>
+                                        <img style={{width: '20px', height: '20px'}} src={header.ru}/>
+                                    </button>
+                                    <button className={'header-translation-btn'} onClick={() => changeLanguage('am')}>
+                                        <img style={{width: '20px', height: '20px'}} src={header.am}/>
+                                    </button>
+                                </div>
                             </div>
 
                             <Link className={'links'} to={'/'}>

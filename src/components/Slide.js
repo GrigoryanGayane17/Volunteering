@@ -30,7 +30,7 @@ function Slide(props) {
                 </button>
             </div>
             <div className={'flex justify-center gap-x-20 lg:items-start items-center lg:flex-row flex-col'}>
-                <div className={'sm:w-[300px] sm:h-[300px] w-[200px] h-[200px] relative'}>
+                <div data-aos="zoom-in" className={'sm:w-[300px] sm:h-[300px] w-[200px] h-[200px] relative'}>
                     {WeWorkWith.map((image, i) => (
                         <img src={image.href} key={i}
                              style={{ transform: `rotate(${index === i ? 0 : getRandomNumber()}deg)` }}
@@ -38,9 +38,9 @@ function Slide(props) {
                     ))}
                 </div>
 
-                <div className={'relative sm:w-[400px] transition-all duration-300 flex items-center p-8'}>
+                <div data-aos="zoom-in" className={'relative sm:w-[400px] transition-all duration-300 flex items-center p-8'}>
                     {WeWorkWith.map((text, i) => (
-                       <p className={` text-[#1f2544] transition-all delay-200 ${i===index ? "activeDesc delay-200" :"inactiveDesc" } sm:text-center`}>{index===i ? t(text.desc) : null}</p>
+                       <p className={` text-lg text-[#1f2544] transition-all delay-200 ${i===index ? "activeDesc delay-200" :"inactiveDesc" } sm:text-center`}>{index===i ? t(text.desc) : null}</p>
                     ))}
                 </div>
             </div>

@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { Container, Card, Form, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Countries from "./Countries";
 
 const IfWorker = () => {
     const { t } = useTranslation();
@@ -25,90 +26,73 @@ const IfWorker = () => {
     const [errors, setErrors] = useState({});
 
     // Regex Patterns for validation
-    const nameRegex = /^[A-Za-z\s]+$/;
+    const nameRegex = /^[\p{L}\s]+$/u;
     const ageRegex = /^(1[89]|[2-9][0-9]|1[0-1][0-9]|120)$/;
     const phoneRegex = /^\+?[1-9]\d{1,14}$/;
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    const countryRegex = /^[A-Za-z\s]+$/;
-    const companyRegex = /^[A-Za-z0-9\s]+$/;
-    const professionRegex = /^[A-Za-z\s]+$/;
-    const skillsRegex = /^[A-Za-z0-9\s,]+$/;
+    const countryRegex = /^[\p{L}\s]+$/u;
+    const companyRegex = /^[\p{L}\d\s]+$/u;
+    const professionRegex = /^[\p{L}\s]+$/u;
+    const skillsRegex = /^[\p{L}\d\s,]+$/u;
 
-    // Handle input change
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    // Validate the form inputs
     const validateForm = () => {
         const newErrors = {};
 
-        // Validate name
         if (!formData.name || !nameRegex.test(formData.name)) {
             newErrors.name = " Name is required ";
         }
 
-        // Validate age
         if (!formData.age || !ageRegex.test(formData.age)) {
             newErrors.age = "Invalid Age";
         }
 
-        // Validate phone
         if (!formData.phone || !phoneRegex.test(formData.phone)) {
             newErrors.phone = "Invalid Phone";
         }
 
-        // Validate email
         if (!formData.email || !emailRegex.test(formData.email)) {
             newErrors.email = "Invalid Email ";
         }
 
-        // Validate password
         if (!formData.password || !passwordRegex.test(formData.password)) {
             newErrors.password = "Invalid Password ";
         }
 
-        // Validate country
         if (!formData.country || !countryRegex.test(formData.country)) {
             newErrors.country = "Invalid Country ";
         }
 
-        // Validate work company
         if (!formData.workCompany || !companyRegex.test(formData.workCompany)) {
             newErrors.workCompany = "Invalid Work Company ";
         }
 
-        // Validate profession
         if (!formData.profession || !professionRegex.test(formData.profession)) {
             newErrors.profession = "Invalid Profession ";
         }
 
-        // Validate skills
         if (!formData.skills || !skillsRegex.test(formData.skills)) {
             newErrors.skills = "Skills are required ";
         }
 
-        // If there are errors, set them to state and return false
         setErrors(newErrors);
 
-        // Return true only if there are no errors
         return Object.keys(newErrors).length === 0;
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validate before submission
-        const isValid = validateForm();
-
-        // If the form is valid, show success message
+       const isValid = validateForm();
         if (isValid) {
             alert("You successfully applied! We will send you an Email.");
         } else {
-            // If there are errors, prevent form submission and show error message
             alert("Please fill out the form correctly.");
         }
     };
@@ -180,32 +164,15 @@ const IfWorker = () => {
                             </Col>
                         </Row>
                         <Row className="mb-3">
+
                             <Col md={6}>
-                                <Form.Group>
-                                    <Form.Control
-                                        type="password"
-                                        name="password"
-                                        value={formData.password}
-                                        onChange={handleChange}
-                                        placeholder={t("ifWorker.EmailPassword")}
-                                    />
-                                    {errors.password && <div className="text-danger">{errors.password}</div>}
-                                </Form.Group>
+                                <Countries
+                                    className="form-control"
+                                    value={formData.country}
+                                    onChange={handleChange}
+                                />
+                                {errors.country && <small className="text-danger">{errors.country}</small>}
                             </Col>
-                            <Col md={6}>
-                                <Form.Group>
-                                    <Form.Control
-                                        type="text"
-                                        name="country"
-                                        value={formData.country}
-                                        onChange={handleChange}
-                                        placeholder={t("ifWorker.Country")}
-                                    />
-                                    {errors.country && <div className="text-danger">{errors.country}</div>}
-                                </Form.Group>
-                            </Col>
-                        </Row>
-                        <Row className="mb-3">
                             <Col md={6}>
                                 <Form.Group>
                                     <Form.Control
@@ -218,6 +185,8 @@ const IfWorker = () => {
                                     {errors.workCompany && <div className="text-danger">{errors.workCompany}</div>}
                                 </Form.Group>
                             </Col>
+                        </Row>
+                        <Row className="mb-3">
                             <Col md={6}>
                                 <Form.Group>
                                     <Form.Control
@@ -230,18 +199,20 @@ const IfWorker = () => {
                                     {errors.profession && <div className="text-danger">{errors.profession}</div>}
                                 </Form.Group>
                             </Col>
+                            <Col md={6}>
+                                <Form.Group className="mb-3">
+                                    <Form.Control
+                                        type="text"
+                                        name="skills"
+                                        required
+                                        value={formData.skills}
+                                        onChange={handleChange}
+                                        placeholder={t("ifWorker.Skills")}
+                                    />
+                                    {errors.skills && <div className="text-danger">{errors.skills}</div>}
+                                </Form.Group>
+                            </Col>
                         </Row>
-                        <Form.Group className="mb-3">
-                            <Form.Control
-                                type="text"
-                                name="skills"
-                                required
-                                value={formData.skills}
-                                onChange={handleChange}
-                                placeholder={t("ifWorker.Skills")}
-                            />
-                            {errors.skills && <div className="text-danger">{errors.skills}</div>}
-                        </Form.Group>
                         <div className="d-grid">
 
                             <button
