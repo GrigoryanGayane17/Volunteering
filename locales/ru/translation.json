@@ -154,7 +154,6 @@
         "image": "https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/a466b6eee7555ed99a9adf60/bbef6c67-d065-15d8-00f7-04c4574b8bd9.jpg"
       }
     ]
-
   },
   "apply": {
     "h1": "Я...",
@@ -163,7 +162,6 @@
     "Other": "Другое",
     "button": "Далее"
   },
-
   "ifWorker": {
     "h1": "Нам нужна некоторая информация для заявки",
     "Name": "Имя",
@@ -176,7 +174,6 @@
     "Skills": "Навыки",
     "button": "Дать заявку"
   },
-
   "ifStudent": {
     "h1": "Нам нужна некоторая информация для заявки",
     "Name": "Имя",
@@ -189,7 +186,6 @@
     "Skills": "Навыки",
     "button": "Подать заявку"
   },
-
   "ifOther": {
     "h1": "Нам нужна некоторая информация для заявки",
     "Name": "Имя",
@@ -225,13 +221,18 @@
       "age_requirement": "18, 18+",
       "main_image": "https://img.freepik.com/free-photo/people-doing-community-service-by-collecting-trash-outdoors_23-2149109153.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg",
-        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg",
-        "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
+        {
+          "link": "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/couple-collects-garbage-garbage-bags-park_1157-27386.jpg"
+        }
       ],
       "button1": "Узнать больше !",
       "button2": "Дать заявку !"
-
     },
     {
       "id": "youth_mentorship_program",
@@ -255,13 +256,18 @@
       "age_requirement": "21, 21+",
       "main_image": "https://img.freepik.com/free-photo/youth-vintage-vector-graphic-concept_53876-21297.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/portrait-teenage-friends-smiling_23-2149260542.jpg",
-        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg",
-        "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
+        {
+          "link": "https://img.freepik.com/free-photo/portrait-teenage-friends-smiling_23-2149260542.jpg?t=st=1739562814~exp=1739566414~hmac=316c6e88aab88b69cf88caef3a811c5b2c0b67a18a916aa13830107239ae9891&w=740 "
+        },
+        {
+          "link": "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/premium-photo/guy-talking-his-teacher-meeting-classroom-with-other-students_236854-35385.jpg"
+        }
       ],
       "button1": "Узнать больше !",
       "button2": "Дать заявку !"
-
     },
     {
       "id": "food_bank_support",
@@ -285,11 +291,90 @@
       "age_requirement": "16, 16+",
       "main_image": "https://img.freepik.com/premium-photo/professional-team-cooks-chefs-preparing-meal-busy-hotel-restaurant-kitchen_530697-27607.jpg",
       "images": [
-        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg",
-        "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        {
+          "link": "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/happy-cooking-team-wearing-uniform-standing-table-with-chopped-vegetables-posing-camera-restaurant-s-kitchen_613910-18631.jpg"
+        }
       ],
       "button1": "Узнать больше !",
       "button2": "Дать заявку !"
+    },
+    {
+      "id": "elderly_care_companion",
+      "title": "Сопровождающий по уходу за пожилыми людьми",
+      "main_description": "Помогайте пожилым людям в вашем сообществе, предоставляя им общение, помощь в повседневных делах и улучшая качество их жизни.",
+      "description": "Станьте важной частью вашего сообщества, предоставляя общение и поддержку пожилым людям. Независимо от того, помогаете ли вы с повседневными задачами, ведёте душевные беседы или просто наполняете их день теплом, ваше участие может значительно улучшить их жизнь. Многие пожилые люди сталкиваются с одиночеством и трудностями, но ваша доброта и забота могут подарить им чувство связи, признания и защищенности. Посвящая своё время, вы не только облегчаете их жизнь, но и строите глубокие отношения, которые принесут радость и утешение как им, так и вам. Станьте источником света в жизни пожилых людей уже сегодня!",
+      "points": [
+        "Проводить время с пожилыми людьми, общаясь и участвуя в различных мероприятиях.",
+        "Помощь в лёгких бытовых делах и покупках.",
+        "Предоставление эмоциональной поддержки и забота об их благополучии.",
+        "Помощь в передвижении и сопровождение на встречи при необходимости."
+      ],
+      "location": "Центр ухода за пожилыми Sunrise",
+      "requirements": [
+        "Забота и терпение по отношению к пожилым людям.",
+        "Возможность помогать в лёгких физических задачах.",
+        "Уважение к конфиденциальности и достоинству пожилых."
+      ],
+      "stars": "⭐⭐⭐⭐⭐",
+      "how_to_apply": "Заполните форму волонтёра на нашем сайте и примите участие в вводной встрече, чтобы начать волонтёрскую деятельность.",
+      "age_requirement": "18, 18+",
+      "main_image": "https://img.freepik.com/free-vector/younger-generation-taking-care-helping-elders_52683-38555.jpg",
+      "images": [
+        {
+          "link": "https://img.freepik.com/free-photo/lifestyle-scene-from-community-showing-care-support-from-people_23-2151261188.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg"
+        },
+        {
+          "link": "https://img.freepik.com/free-photo/old-patient-suffering-from-parkinson_23-2149370433.jpg"
+        }
+      ],
+      "button1": "Подробнее!",
+      "button2": "Хотите подать заявку?"
+    },
+    {
+      "id": "janagas_concert_volunteers",
+      "title": "Концерт Janaga",
+      "main_description": "Janaga выступит с особым концертом в Армении 14 февраля, и нам нужны волонтёры, чтобы сделать это мероприятие успешным. Волонтёры помогут в организации, сопровождении гостей и других вопросах.",
+      "description": "Приготовьтесь к незабываемому опыту, когда Janaga выйдет на сцену с особым концертом 14 февраля в Армении. Нам нужны преданные волонтёры, такие как вы, чтобы сделать это грандиозное событие реальностью. Вы будете помогать в подготовке мероприятия, сопровождении гостей и обеспечении его безупречной организации, делая этот вечер незабываемым. Это уникальная возможность стать частью этого великолепного события, встретиться с любителями музыки и внести свой вклад в успех исторического концерта. Присоединяйтесь к нам и станьте важной частью этого невероятного события — давайте сделаем этот вечер незабываемым!",
+      "points": [
+        "Помощь в подготовке мероприятия и организационных задачах после его завершения.",
+        "Сопровождение гостей и помощь в поиске их мест.",
+        "Регистрация гостей и контроль на входе.",
+        "Поддержка организаторов для обеспечения плавного и успешного проведения мероприятия.",
+        "Создание безопасной и приятной атмосферы для всех участников концерта."
+      ],
+      "location": "Армения, [Место проведения концерта]",
+      "requirements": [
+        "Интерес к живым мероприятиям и концертам.",
+        "Хорошие коммуникативные навыки и навыки обслуживания клиентов.",
+        "Умение работать в команде и сохранять спокойствие в стрессовых ситуациях.",
+        "Физическая выносливость для помощи в организации мероприятия."
+      ],
+      "stars": "⭐⭐⭐⭐⭐",
+      "how_to_apply": "Если вы хотите принять участие в концерте Janaga в качестве волонтёра, зарегистрируйтесь на нашей волонтёрской странице. Заполните заявку и выберите желаемую смену. Волонтёры получат более подробную информацию ближе к дате концерта.",
+      "age_requirement": "16, 16+",
+      "main_image": "https://cdn.kassir.ru/msk/poster/3e/3eee4d874e5657c3baa32b0b243aa494.jpg",
+      "images": [
+        {
+          "link": "https://cdnlv.redkassa.ru/live/sitenew/picture/a989ab57-eae5-471b-a048-c52e99aeeaaa"
+        },
+        {
+          "link": "https://cdn-image.zvuk.com/pic?type=release&id=11873375&size=medium&hash=d401fffc-3159-413d-9a61-356253c1e814"
+        },
+        {
+          "link": "https://lastfm.freetls.fastly.net/i/u/ar0/34688244f92db5aaa230bf09d594503b.jpg"
+        }
+      ],
+      "button1": "Подробнее!",
+      "button2": "Хотите подать заявку?"
     }
   ],
   "weWorkWith": [
@@ -319,9 +404,6 @@
       "desc": "Престижный французский модный дом, специализирующийся на роскошных кожаных изделиях, одежде и аксессуарах. Благодаря монограмме LV бренд олицетворяет изысканность и эксклюзивность."
     }
   ],
-
-
-
   "footer": {
     "sectionName": "Контакты",
     "form": {
