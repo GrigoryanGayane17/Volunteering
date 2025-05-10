@@ -308,8 +308,6 @@ function Home(props) {
                     </svg>
                 </button>
             )}
-
-            <Countries/>
         </div>
 
     );
