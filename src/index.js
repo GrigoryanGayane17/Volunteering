@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/home.css'
 import '../src/assets/css/footer.css'
 import './i18n'
-
+import './firebase';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,10 +22,14 @@ const Loader = () => {
                 <div className="electron electron3"></div>
             </div>
         </div>
-
     </div>
-
 }
+
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+    throw new Error('Root container missing in HTML!');
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,8 +38,8 @@ root.render(
             <App/>
         </Suspense>
     </React.StrictMode>
-)
-;
-
+);
 
 reportWebVitals();
+
+
