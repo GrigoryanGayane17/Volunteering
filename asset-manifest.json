@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/reactapp/static/css/main.c363dead.css",
-    "main.js": "/reactapp/static/js/main.2a61b9e0.js",
-    "static/js/453.a8285b09.chunk.js": "/reactapp/static/js/453.a8285b09.chunk.js",
-    "static/media/freepik__background__92321.png": "/reactapp/static/media/freepik__background__92321.c1e1e6c031e6649570ec.png",
-    "static/media/menu.png": "/reactapp/static/media/menu.39c201560ecfb6de95fc.png",
-    "index.html": "/reactapp/index.html",
-    "static/media/getFetch.cjs": "/reactapp/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.c363dead.css.map": "/reactapp/static/css/main.c363dead.css.map",
-    "main.2a61b9e0.js.map": "/reactapp/static/js/main.2a61b9e0.js.map",
-    "453.a8285b09.chunk.js.map": "/reactapp/static/js/453.a8285b09.chunk.js.map"
+    "main.css": "/Volunteering/static/css/main.c363dead.css",
+    "main.js": "/Volunteering/static/js/main.d0090485.js",
+    "static/js/453.a8285b09.chunk.js": "/Volunteering/static/js/453.a8285b09.chunk.js",
+    "static/media/freepik__background__92321.png": "/Volunteering/static/media/freepik__background__92321.c1e1e6c031e6649570ec.png",
+    "static/media/menu.png": "/Volunteering/static/media/menu.39c201560ecfb6de95fc.png",
+    "index.html": "/Volunteering/index.html",
+    "static/media/getFetch.cjs": "/Volunteering/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.c363dead.css.map": "/Volunteering/static/css/main.c363dead.css.map",
+    "main.d0090485.js.map": "/Volunteering/static/js/main.d0090485.js.map",
+    "453.a8285b09.chunk.js.map": "/Volunteering/static/js/453.a8285b09.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c363dead.css",
-    "static/js/main.2a61b9e0.js"
+    "static/js/main.d0090485.js"
   ]
 }
